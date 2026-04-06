@@ -1,62 +1,53 @@
 <div class="container-fluid" style="width: 100%; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 0; box-sizing: border-box;">
 
   <!-- Hero Banner -->
-  <div class="d-flex flex-wrap align-items-center justify-content-between" style="background-color: #f2f2f3; border-radius: 20px; margin-bottom: 60px; padding: 30px 50px; width: 100%; box-sizing: border-box; position: relative; overflow: hidden;">
-    <!-- Text Column -->
-    <div style="flex: 1 1 50%; padding-right: 20px; box-sizing: border-box; min-width: 300px; position: relative; z-index: 10;">
-      <!-- Branding Elements -->
-      <div class="d-flex align-items-center" style="margin-bottom: 20px;">
-        <div style="background-color: #EB0029; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; margin-right: 10px; border-radius: 4px;">
-          <span style="color: #ffffff; font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 14px;">I</span>
-        </div>
-        <span style="color: #83786F; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Curso MiniTIC</span>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <div style="position:relative; overflow:hidden; background:#F7F7F5; display:flex; align-items:center; padding:0 80px; box-sizing:border-box; width:100%; height:380px; margin-bottom:60px;">
+
+    <!-- Left Column — Text Block -->
+    <div style="width:52%; box-sizing:border-box; position:relative; z-index:2;">
+
+      <!-- Label Row -->
+      <div style="margin-bottom:18px;">
+        <span style="display:inline-block; width:8px; height:8px; background:#AB1E12; margin-right:10px; vertical-align:middle;"></span><span style="font-size:10px; font-weight:700; letter-spacing:0.22em; color:#0D0D0D; vertical-align:middle; font-family:'Inter', sans-serif;">CURSO MINITIC</span>
       </div>
 
-      <!-- Main Heading -->
-      <h1 style="font-size: 40px; font-weight: 800; color: #1a1a1a; margin-bottom: 30px; line-height: 1.2; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
-        Diseño de experiencias de <span style="color: #EB0029;">microaprendizaje</span>
-      </h1>
+      <!-- Title -->
+      <div style="margin-bottom:6px;">
+        <span style="font-size:38px; font-weight:800; color:#0D0D0D; line-height:1.08; font-family:'Inter', sans-serif; display:block;">Diseño de experiencias de</span>
+        <span style="font-size:38px; font-weight:800; color:#AB1E12; line-height:1.08; font-family:'Inter', sans-serif; display:block;">microaprendizaje</span>
+      </div>
 
-      <!-- Button / Visual Badge -->
-      <span style="display: inline-block; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 14px 32px; font-size: 16px; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">MODALIDAD VIRTUAL</span>
-    </div>
+      <!-- Subtitle -->
+      <div style="margin-top:14px; margin-bottom:28px;">
+        <span style="font-size:12px; font-weight:400; color:#888888; letter-spacing:0.08em; font-family:'Inter', sans-serif;">Universidad Iberoamericana León</span>
+      </div>
 
-    <!-- Image Column -->
-    <div style="flex: 1 1 40%; display: flex; justify-content: center; align-items: center; box-sizing: border-box; min-width: 300px; margin-top: 20px; position: relative;">
-
-      <!-- Fondo Orgánico Suave -->
-      <div style="position: absolute; width: 350px; height: 350px; background-color: #fce8ec; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 1; right: -20px;"></div>
-
-      <!-- Floating Elements -->
-      <!-- Lightbulb -->
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#EB0029" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; top: 10%; left: 10%; z-index: 3; transform: rotate(-15deg);">
-        <path d="M9 18h6"></path>
-        <path d="M10 22h4"></path>
-        <path d="M12 2v1"></path>
-        <path d="M12 7v1"></path>
-        <path d="M5.6 5.6l.7.7"></path>
-        <path d="M18.4 5.6l-.7.7"></path>
-        <path d="M2 12h1"></path>
-        <path d="M21 12h1"></path>
-        <path d="M5.6 18.4l.7-.7"></path>
-        <path d="M18.4 18.4l-.7-.7"></path>
-        <path d="M9.5 9.5a3.5 3.5 0 1 1 5 5v3.5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3.5a3.5 3.5 0 0 1-.5-5z"></path>
-      </svg>
-      <!-- Pencil -->
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; bottom: 20%; left: 5%; z-index: 3; transform: rotate(15deg);">
-        <path d="M12 20h9"></path>
-        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-      </svg>
-      <!-- Graduation Cap -->
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#83786F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; top: 20%; right: 10%; z-index: 3; transform: rotate(10deg);">
-        <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-        <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-      </svg>
-
-      <!-- Integrated Image -->
-      <img src="https://cursos.iberoleon.mx/online/draftfile.php/2148825/user/draft/855858473/cc13c751-f37f-4034-8de9-059e04737080.jpg" alt="Hero Image" style="max-width: 320px; height: auto; object-fit: cover; display: block; mix-blend-mode: multiply; position: relative; z-index: 2; border-radius: 10px;">
+      <!-- CTA Button -->
+      <a href="#" style="display:inline-block; background:#AB1E12; color:#FFFFFF; border-radius:40px; padding:13px 28px; font-size:10px; font-weight:700; letter-spacing:0.14em; font-family:'Inter', sans-serif; border:none; cursor:pointer; text-decoration:none;">MODALIDAD VIRTUAL</a>
 
     </div>
+
+    <!-- Right Column — Illustration -->
+    <div style="width:48%; position:relative; height:380px; display:flex; align-items:flex-end; justify-content:flex-end;">
+
+      <!-- Floating Icon 1 — Lightbulb -->
+      <div style="position:absolute; top:60px; left:20px; width:40px; height:40px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); z-index:2;">💡</div>
+
+      <!-- Floating Icon 2 — Graduation Cap -->
+      <div style="position:absolute; top:40px; right:60px; width:40px; height:40px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); z-index:2;">🎓</div>
+
+      <!-- Floating Icon 3 — Pencil -->
+      <div style="position:absolute; top:160px; left:0px; width:40px; height:40px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06); z-index:2;">✏️</div>
+
+      <!-- Soft Pink Blob -->
+      <div style="position:absolute; bottom:-40px; right:-20px; width:300px; height:300px; background:#FDEAEB; border-radius:50%; z-index:0;"></div>
+
+      <!-- Illustration Image -->
+      <img src="https://cursos.iberoleon.mx/online/draftfile.php/2148825/user/draft/834086882/cc13c751-f37f-4034-8de9-059e04737080.jpg" alt="Ilustración del curso" style="position:absolute; bottom:0; right:40px; height:340px; width:auto; z-index:1; object-fit:contain;">
+
+    </div>
+
   </div>
 
   <!-- Welcome Section -->
