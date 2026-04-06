@@ -1,7 +1,7 @@
 <div class="container-fluid" style="width: 100%; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 0; box-sizing: border-box;">
 
   <!-- Hero Banner -->
-  <div class="d-flex flex-wrap align-items-center justify-content-between" style="background-color: #f2f2f3; border-radius: 20px; margin-bottom: 60px; padding: 30px 50px; width: 100%; box-sizing: border-box; position: relative; overflow: hidden;">
+  <div class="d-flex flex-wrap align-items-center justify-content-between" style="background-color: #ffffff; border-radius: 20px; margin-bottom: 60px; padding: 30px 50px; width: 100%; box-sizing: border-box; position: relative; overflow: hidden;">
     <!-- Text Column -->
     <div style="flex: 1 1 50%; padding-right: 20px; box-sizing: border-box; min-width: 300px; position: relative; z-index: 10;">
       <!-- Branding Elements -->
@@ -25,7 +25,7 @@
     <div style="flex: 1 1 40%; display: flex; justify-content: center; align-items: center; box-sizing: border-box; min-width: 300px; margin-top: 20px; position: relative;">
 
       <!-- Fondo Orgánico Suave -->
-      <div style="position: absolute; width: 350px; height: 350px; background-color: #fce8ec; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 1; right: -20px;"></div>
+      <div style="position: absolute; width: 350px; height: 350px; background-color: #fdf0f2; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; z-index: 1; right: -20px;"></div>
 
       <!-- Floating Elements -->
       <!-- Lightbulb -->
