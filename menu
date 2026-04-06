@@ -1,297 +1,619 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=1200">
-<title>Sistema Visual MiniTIC — Preview</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    background: #F4F4F4;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 1280px;
-    margin: 0 auto;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1200" />
+    <title>Sistema Visual MiniTIC — Preview</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          sans-serif;
+        background: #f4f4f4;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
 
-  /* ─── SECTION LABEL ─── */
-  .section-label {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #999;
-    margin-bottom: 12px;
-  }
+      /* ─── SECTION LABEL ─── */
+      .section-label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #999;
+        margin-bottom: 12px;
+      }
 
-  /* ══════════════════════════════════════════
+      /* ══════════════════════════════════════════
      1. BANNER HERO
   ══════════════════════════════════════════ */
-  .hero {
-    position: relative;
-    width: 1200px;
-    height: 300px;
-    background: #0D0D0D;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-  }
-  .hero-bar {
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 6px;
-    background: #AB1E12;
-  }
-  .hero-tag {
-    position: absolute;
-    top: 0; right: 0;
-    background: #AB1E12;
-    color: #FFFFFF;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 9px 18px;
-    font-family: 'Inter', sans-serif;
-  }
-  .hero-content {
-    padding-left: 72px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-  }
-  .hero-eyebrow {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #AB1E12;
-    font-family: 'Inter', sans-serif;
-  }
-  .hero-title {
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1.05;
-    letter-spacing: -0.025em;
-    color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
-    max-width: 680px;
-  }
+      .hero {
+        position: relative;
+        width: 1200px;
+        height: 300px;
+        background: #0d0d0d;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      .hero-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 6px;
+        background: #ab1e12;
+      }
+      .hero-tag {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #ab1e12;
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding: 9px 18px;
+        font-family: "Inter", sans-serif;
+      }
+      .hero-content {
+        padding-left: 72px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .hero-eyebrow {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: #ab1e12;
+        font-family: "Inter", sans-serif;
+      }
+      .hero-title {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.05;
+        letter-spacing: -0.025em;
+        color: #ffffff;
+        font-family: "Inter", sans-serif;
+        max-width: 680px;
+      }
 
-  /* ══════════════════════════════════════════
+      /* ══════════════════════════════════════════
      2. BLOQUE DE BIENVENIDA
   ══════════════════════════════════════════ */
-  .welcome {
-    background: #FFFFFF;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-  }
-  .welcome-text {
-    padding: 52px 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    border-right: 1px solid #E8E8E8;
-  }
-  .welcome-eyebrow {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #AB1E12;
-    font-family: 'Inter', sans-serif;
-  }
-  .welcome-title {
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    color: #0D0D0D;
-    font-family: 'Inter', sans-serif;
-  }
-  .welcome-body {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.7;
-    color: #444;
-    font-family: 'Inter', sans-serif;
-  }
-  .welcome-video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #F4F4F4;
-  }
-  .video-placeholder {
-    width: calc(100% - 56px);
-    aspect-ratio: 16/9;
-    border: 1px solid #0D0D0D;
-    background: #FFFFFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 28px;
-  }
-  .video-icon {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #0D0D0D;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .video-icon svg { display: block; }
-  .video-label {
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #999;
-    font-family: 'Inter', sans-serif;
-  }
+      .welcome {
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      .welcome-text {
+        padding: 52px 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        border-right: 1px solid #e8e8e8;
+      }
+      .welcome-eyebrow {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #ab1e12;
+        font-family: "Inter", sans-serif;
+      }
+      .welcome-title {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: #0d0d0d;
+        font-family: "Inter", sans-serif;
+      }
+      .welcome-body {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.7;
+        color: #444;
+        font-family: "Inter", sans-serif;
+      }
+      .welcome-video {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f4f4;
+      }
+      .video-placeholder {
+        width: calc(100% - 56px);
+        aspect-ratio: 16/9;
+        border: 1px solid #0d0d0d;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 28px;
+      }
+      .video-icon {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #0d0d0d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .video-icon svg {
+        display: block;
+      }
+      .video-label {
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #999;
+        font-family: "Inter", sans-serif;
+      }
 
-  /* ══════════════════════════════════════════
+      /* ══════════════════════════════════════════
      3. TARJETAS DE BLOQUE
   ══════════════════════════════════════════ */
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0;
-    border: 1px solid #E0E0E0;
-  }
-  .card {
-    background: #FFFFFF;
-    border-top: 3px solid #AB1E12;
-    border-right: 1px solid #E0E0E0;
-    padding: 36px 32px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .card:last-child { border-right: none; }
-  .card-number {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #AB1E12;
-    font-family: 'Inter', sans-serif;
-  }
-  .card-title {
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.2;
-    letter-spacing: -0.015em;
-    color: #0D0D0D;
-    font-family: 'Inter', sans-serif;
-    flex: 1;
-  }
-  .card-desc {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #666;
-    font-family: 'Inter', sans-serif;
-    min-height: 44px;
-  }
-  .card-btn {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 10px 20px;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #AB1E12;
-    border: 1.5px solid #AB1E12;
-    background: transparent;
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    transition: background 0.15s, color 0.15s;
-  }
-  .card-btn:hover {
-    background: #AB1E12;
-    color: #FFFFFF;
-  }
-</style>
-</head>
-<body>
-
-  <!-- ─── 1. BANNER HERO ─── -->
-  <div>
-    <p class="section-label">Componente 1 — Banner Hero (1200×300px)</p>
-    <div class="hero">
-      <div class="hero-bar"></div>
-      <div class="hero-tag">MiniTIC</div>
-      <div class="hero-content">
-        <span class="hero-eyebrow">MiniTIC · Universidad Iberoamericana León</span>
-        <h1 class="hero-title">Diseño de experiencias de microaprendizaje</h1>
-      </div>
-    </div>
-  </div>
-
-  <!-- ─── 2. BLOQUE DE BIENVENIDA ─── -->
-  <div>
-    <p class="section-label">Componente 2 — Bloque de Bienvenida</p>
-    <div class="welcome">
-      <div class="welcome-text">
-        <span class="welcome-eyebrow">Bienvenida al curso</span>
-        <h2 class="welcome-title">Aprende a diseñar experiencias de aprendizaje que realmente funcionan.</h2>
-        <p class="welcome-body">Este curso te guiará a través del diseño, producción y evaluación de microcontenidos educativos efectivos para entornos digitales universitarios.</p>
-      </div>
-      <div class="welcome-video">
-        <div class="video-placeholder">
-          <div class="video-icon">
-            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L13 8L1 15V1Z" fill="#0D0D0D"/>
-            </svg>
-          </div>
-          <span class="video-label">Video de bienvenida</span>
+      .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        border: 1px solid #e0e0e0;
+      }
+      .card {
+        background: #ffffff;
+        border-top: 3px solid #ab1e12;
+        border-right: 1px solid #e0e0e0;
+        padding: 36px 32px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .card:last-child {
+        border-right: none;
+      }
+      .card-number {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #ab1e12;
+        font-family: "Inter", sans-serif;
+      }
+      .card-title {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -0.015em;
+        color: #0d0d0d;
+        font-family: "Inter", sans-serif;
+        flex: 1;
+      }
+      .card-desc {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6;
+        color: #666;
+        font-family: "Inter", sans-serif;
+        min-height: 44px;
+      }
+      .card-btn {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #ab1e12;
+        border: 1.5px solid #ab1e12;
+        background: transparent;
+        cursor: pointer;
+        font-family: "Inter", sans-serif;
+        text-decoration: none;
+        text-align: center;
+        transition:
+          background 0.15s,
+          color 0.15s;
+      }
+      .card-btn:hover {
+        background: #ab1e12;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ─── 1. BANNER HERO ─── -->
+    <div>
+      <p class="section-label">Componente 1 — Banner Hero (1200×300px)</p>
+      <div class="hero">
+        <div class="hero-bar"></div>
+        <div class="hero-tag">MiniTIC</div>
+        <div class="hero-content">
+          <span class="hero-eyebrow"
+            >MiniTIC · Universidad Iberoamericana León</span
+          >
+          <h1 class="hero-title">Diseño de experiencias de microaprendizaje</h1>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ─── 3. TARJETAS DE BLOQUE ─── -->
-  <div>
-    <p class="section-label">Componente 3 — Tarjetas de Bloque</p>
-    <div class="cards-grid">
-      <div class="card">
-        <span class="card-number">Bloque 01</span>
-        <h3 class="card-title">Encuadre y diagnóstico</h3>
-        <p class="card-desc">Punto de partida: contexto, necesidades y mapa del curso.</p>
-        <a href="#" class="card-btn">Ingresar</a>
-      </div>
-      <div class="card">
-        <span class="card-number">Bloque 02</span>
-        <h3 class="card-title">Diseño de la experiencia</h3>
-        <p class="card-desc">Estructura pedagógica, objetivos y flujo de aprendizaje.</p>
-        <a href="#" class="card-btn">Ingresar</a>
-      </div>
-      <div class="card">
-        <span class="card-number">Bloque 03</span>
-        <h3 class="card-title">Producción en herramienta</h3>
-        <p class="card-desc">Creación de microcontenidos con herramientas digitales.</p>
-        <a href="#" class="card-btn">Ingresar</a>
-      </div>
-      <div class="card">
-        <span class="card-number">Bloque 04</span>
-        <h3 class="card-title">Revisión, estrategia y cierre</h3>
-        <p class="card-desc">Evaluación, iteración y transferencia al aula universitaria.</p>
-        <a href="#" class="card-btn">Ingresar</a>
+    <!-- ─── 2. BLOQUE DE BIENVENIDA ─── -->
+    <div>
+      <p class="section-label">Componente 2 — Bloque de Bienvenida</p>
+      <div class="welcome">
+        <div class="welcome-text">
+          <span class="welcome-eyebrow">Bienvenida al curso</span>
+          <h2 class="welcome-title">
+            Aprende a diseñar experiencias de aprendizaje que realmente
+            funcionan.
+          </h2>
+          <p class="welcome-body">
+            Este curso te guiará a través del diseño, producción y evaluación de
+            microcontenidos educativos efectivos para entornos digitales
+            universitarios.
+          </p>
+        </div>
+        <div class="welcome-video">
+          <div class="video-placeholder">
+            <div class="video-icon">
+              <svg
+                width="14"
+                height="16"
+                viewBox="0 0 14 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M1 1L13 8L1 15V1Z" fill="#0D0D0D" />
+              </svg>
+            </div>
+            <span class="video-label">Video de bienvenida</span>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-</body>
+    <!-- ─── 3. TARJETAS DE BLOQUE ─── -->
+    <div
+      style="
+        background-color: #f4f4f4;
+        padding: 64px;
+        font-family: &quot;Inter&quot;, sans-serif;
+        box-sizing: border-box;
+      "
+    >
+      <div
+        style="
+          font-size: 11px;
+          letter-spacing: 0.2em;
+          color: #ab1e12;
+          margin-bottom: 48px;
+          font-weight: 700;
+          text-transform: uppercase;
+        "
+      >
+        ESTRUCTURA DEL CURSO
+      </div>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2px;
+          box-sizing: border-box;
+        "
+      >
+        <div
+          style="
+            background-color: #ffffff;
+            padding: 32px;
+            border-top: 3px solid #ab1e12;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            style="
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.15em;
+              color: #ab1e12;
+              margin-bottom: 16px;
+            "
+          >
+            01
+          </div>
+          <div
+            style="
+              font-size: 18px;
+              font-weight: 700;
+              color: #0d0d0d;
+              margin-bottom: 8px;
+            "
+          >
+            Encuadre y diagnóstico
+          </div>
+          <div
+            style="
+              font-size: 13px;
+              font-weight: 400;
+              color: #666666;
+              line-height: 1.6;
+              margin-bottom: 24px;
+              flex-grow: 1;
+            "
+          >
+            Fundamentos del microaprendizaje y selección de herramienta
+          </div>
+          <button
+            style="
+              width: 100%;
+              padding: 12px;
+              border: 1.5px solid #ab1e12;
+              border-radius: 0;
+              background-color: transparent;
+              color: #ab1e12;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              cursor: pointer;
+              transition: 200ms ease;
+              font-family: &quot;Inter&quot;, sans-serif;
+              box-sizing: border-box;
+            "
+            onmouseover="
+              this.style.backgroundColor = '#AB1E12';
+              this.style.color = '#FFFFFF';
+            "
+            onmouseout="
+              this.style.backgroundColor = 'transparent';
+              this.style.color = '#AB1E12';
+            "
+          >
+            Ingresar
+          </button>
+        </div>
+
+        <div
+          style="
+            background-color: #ffffff;
+            padding: 32px;
+            border-top: 3px solid #ab1e12;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            style="
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.15em;
+              color: #ab1e12;
+              margin-bottom: 16px;
+            "
+          >
+            02
+          </div>
+          <div
+            style="
+              font-size: 18px;
+              font-weight: 700;
+              color: #0d0d0d;
+              margin-bottom: 8px;
+            "
+          >
+            Diseño de la experiencia
+          </div>
+          <div
+            style="
+              font-size: 13px;
+              font-weight: 400;
+              color: #666666;
+              line-height: 1.6;
+              margin-bottom: 24px;
+              flex-grow: 1;
+            "
+          >
+            Objetivo, estructura y retroalimentación
+          </div>
+          <button
+            style="
+              width: 100%;
+              padding: 12px;
+              border: 1.5px solid #ab1e12;
+              border-radius: 0;
+              background-color: transparent;
+              color: #ab1e12;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              cursor: pointer;
+              transition: 200ms ease;
+              font-family: &quot;Inter&quot;, sans-serif;
+              box-sizing: border-box;
+            "
+            onmouseover="
+              this.style.backgroundColor = '#AB1E12';
+              this.style.color = '#FFFFFF';
+            "
+            onmouseout="
+              this.style.backgroundColor = 'transparent';
+              this.style.color = '#AB1E12';
+            "
+          >
+            Ingresar
+          </button>
+        </div>
+
+        <div
+          style="
+            background-color: #ffffff;
+            padding: 32px;
+            border-top: 3px solid #ab1e12;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            style="
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.15em;
+              color: #ab1e12;
+              margin-bottom: 16px;
+            "
+          >
+            03
+          </div>
+          <div
+            style="
+              font-size: 18px;
+              font-weight: 700;
+              color: #0d0d0d;
+              margin-bottom: 8px;
+            "
+          >
+            Producción en herramienta
+          </div>
+          <div
+            style="
+              font-size: 13px;
+              font-weight: 400;
+              color: #666666;
+              line-height: 1.6;
+              margin-bottom: 24px;
+              flex-grow: 1;
+            "
+          >
+            Tutorial paso a paso en tu herramienta asignada
+          </div>
+          <button
+            style="
+              width: 100%;
+              padding: 12px;
+              border: 1.5px solid #ab1e12;
+              border-radius: 0;
+              background-color: transparent;
+              color: #ab1e12;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              cursor: pointer;
+              transition: 200ms ease;
+              font-family: &quot;Inter&quot;, sans-serif;
+              box-sizing: border-box;
+            "
+            onmouseover="
+              this.style.backgroundColor = '#AB1E12';
+              this.style.color = '#FFFFFF';
+            "
+            onmouseout="
+              this.style.backgroundColor = 'transparent';
+              this.style.color = '#AB1E12';
+            "
+          >
+            Ingresar
+          </button>
+        </div>
+
+        <div
+          style="
+            background-color: #ffffff;
+            padding: 32px;
+            border-top: 3px solid #ab1e12;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+          "
+        >
+          <div
+            style="
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.15em;
+              color: #ab1e12;
+              margin-bottom: 16px;
+            "
+          >
+            04
+          </div>
+          <div
+            style="
+              font-size: 18px;
+              font-weight: 700;
+              color: #0d0d0d;
+              margin-bottom: 8px;
+            "
+          >
+            Revisión y cierre
+          </div>
+          <div
+            style="
+              font-size: 13px;
+              font-weight: 400;
+              color: #666666;
+              line-height: 1.6;
+              margin-bottom: 24px;
+              flex-grow: 1;
+            "
+          >
+            Implementación, reflexión y entregables finales
+          </div>
+          <button
+            style="
+              width: 100%;
+              padding: 12px;
+              border: 1.5px solid #ab1e12;
+              border-radius: 0;
+              background-color: transparent;
+              color: #ab1e12;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              cursor: pointer;
+              transition: 200ms ease;
+              font-family: &quot;Inter&quot;, sans-serif;
+              box-sizing: border-box;
+            "
+            onmouseover="
+              this.style.backgroundColor = '#AB1E12';
+              this.style.color = '#FFFFFF';
+            "
+            onmouseout="
+              this.style.backgroundColor = 'transparent';
+              this.style.color = '#AB1E12';
+            "
+          >
+            Ingresar
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
