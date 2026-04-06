@@ -318,300 +318,40 @@
       >
         ESTRUCTURA DEL CURSO
       </div>
-      <div
-        style="
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 2px;
-          box-sizing: border-box;
-        "
-      >
-        <div
-          style="
-            background-color: #ffffff;
-            padding: 32px;
-            border-top: 3px solid #ab1e12;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            style="
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.15em;
-              color: #ab1e12;
-              margin-bottom: 16px;
-            "
-          >
-            01
+      <div class="container" style="font-family: 'Montserrat', Helvetica, Arial, sans-serif; box-sizing: border-box;">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div style="background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-top: 3px solid #EB0029; display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+              <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: #EB0029; margin-bottom: 16px;">Bloque 1</div>
+              <div style="font-size: 18px; font-weight: 700; color: #000000; margin-bottom: 8px;">Encuadre y diagnóstico</div>
+              <div style="font-size: 13px; font-weight: 400; color: #83786F; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Fundamentos del microaprendizaje y selección de herramienta</div>
+              <button style="width: 100%; padding: 12px; border: 1.5px solid #EB0029; border-radius: 12px; background-color: transparent; color: #EB0029; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; cursor: pointer; transition: 200ms ease; font-family: 'Montserrat', Helvetica, Arial, sans-serif; box-sizing: border-box;" onmouseover="this.style.backgroundColor = '#EB0029'; this.style.color = '#ffffff';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#EB0029';">Ingresar</button>
+            </div>
           </div>
-          <div
-            style="
-              font-size: 18px;
-              font-weight: 700;
-              color: #0d0d0d;
-              margin-bottom: 8px;
-            "
-          >
-            Encuadre y diagnóstico
+          <div class="col-md-3 mb-4">
+            <div style="background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-top: 3px solid #EB0029; display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+              <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: #EB0029; margin-bottom: 16px;">Bloque 2</div>
+              <div style="font-size: 18px; font-weight: 700; color: #000000; margin-bottom: 8px;">Diseño de la experiencia</div>
+              <div style="font-size: 13px; font-weight: 400; color: #83786F; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Objetivo, estructura y retroalimentación</div>
+              <button style="width: 100%; padding: 12px; border: 1.5px solid #EB0029; border-radius: 12px; background-color: transparent; color: #EB0029; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; cursor: pointer; transition: 200ms ease; font-family: 'Montserrat', Helvetica, Arial, sans-serif; box-sizing: border-box;" onmouseover="this.style.backgroundColor = '#EB0029'; this.style.color = '#ffffff';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#EB0029';">Ingresar</button>
+            </div>
           </div>
-          <div
-            style="
-              font-size: 13px;
-              font-weight: 400;
-              color: #666666;
-              line-height: 1.6;
-              margin-bottom: 24px;
-              flex-grow: 1;
-            "
-          >
-            Fundamentos del microaprendizaje y selección de herramienta
+          <div class="col-md-3 mb-4">
+            <div style="background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-top: 3px solid #EB0029; display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+              <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: #EB0029; margin-bottom: 16px;">Bloque 3</div>
+              <div style="font-size: 18px; font-weight: 700; color: #000000; margin-bottom: 8px;">Producción en herramienta</div>
+              <div style="font-size: 13px; font-weight: 400; color: #83786F; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Tutorial paso a paso en tu herramienta asignada</div>
+              <button style="width: 100%; padding: 12px; border: 1.5px solid #EB0029; border-radius: 12px; background-color: transparent; color: #EB0029; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; cursor: pointer; transition: 200ms ease; font-family: 'Montserrat', Helvetica, Arial, sans-serif; box-sizing: border-box;" onmouseover="this.style.backgroundColor = '#EB0029'; this.style.color = '#ffffff';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#EB0029';">Ingresar</button>
+            </div>
           </div>
-          <button
-            style="
-              width: 100%;
-              padding: 12px;
-              border: 1.5px solid #ab1e12;
-              border-radius: 0;
-              background-color: transparent;
-              color: #ab1e12;
-              font-size: 12px;
-              font-weight: 700;
-              letter-spacing: 0.1em;
-              cursor: pointer;
-              transition: 200ms ease;
-              font-family: &quot;Inter&quot;, sans-serif;
-              box-sizing: border-box;
-            "
-            onmouseover="
-              this.style.backgroundColor = '#AB1E12';
-              this.style.color = '#FFFFFF';
-            "
-            onmouseout="
-              this.style.backgroundColor = 'transparent';
-              this.style.color = '#AB1E12';
-            "
-          >
-            Ingresar
-          </button>
-        </div>
-
-        <div
-          style="
-            background-color: #ffffff;
-            padding: 32px;
-            border-top: 3px solid #ab1e12;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            style="
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.15em;
-              color: #ab1e12;
-              margin-bottom: 16px;
-            "
-          >
-            02
+          <div class="col-md-3 mb-4">
+            <div style="background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-top: 3px solid #EB0029; display: flex; flex-direction: column; height: 100%; box-sizing: border-box;">
+              <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.15em; color: #EB0029; margin-bottom: 16px;">Bloque 4</div>
+              <div style="font-size: 18px; font-weight: 700; color: #000000; margin-bottom: 8px;">Revisión y cierre</div>
+              <div style="font-size: 13px; font-weight: 400; color: #83786F; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Implementación, reflexión y entregables finales</div>
+              <button style="width: 100%; padding: 12px; border: 1.5px solid #EB0029; border-radius: 12px; background-color: transparent; color: #EB0029; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; cursor: pointer; transition: 200ms ease; font-family: 'Montserrat', Helvetica, Arial, sans-serif; box-sizing: border-box;" onmouseover="this.style.backgroundColor = '#EB0029'; this.style.color = '#ffffff';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = '#EB0029';">Ingresar</button>
+            </div>
           </div>
-          <div
-            style="
-              font-size: 18px;
-              font-weight: 700;
-              color: #0d0d0d;
-              margin-bottom: 8px;
-            "
-          >
-            Diseño de la experiencia
-          </div>
-          <div
-            style="
-              font-size: 13px;
-              font-weight: 400;
-              color: #666666;
-              line-height: 1.6;
-              margin-bottom: 24px;
-              flex-grow: 1;
-            "
-          >
-            Objetivo, estructura y retroalimentación
-          </div>
-          <button
-            style="
-              width: 100%;
-              padding: 12px;
-              border: 1.5px solid #ab1e12;
-              border-radius: 0;
-              background-color: transparent;
-              color: #ab1e12;
-              font-size: 12px;
-              font-weight: 700;
-              letter-spacing: 0.1em;
-              cursor: pointer;
-              transition: 200ms ease;
-              font-family: &quot;Inter&quot;, sans-serif;
-              box-sizing: border-box;
-            "
-            onmouseover="
-              this.style.backgroundColor = '#AB1E12';
-              this.style.color = '#FFFFFF';
-            "
-            onmouseout="
-              this.style.backgroundColor = 'transparent';
-              this.style.color = '#AB1E12';
-            "
-          >
-            Ingresar
-          </button>
-        </div>
-
-        <div
-          style="
-            background-color: #ffffff;
-            padding: 32px;
-            border-top: 3px solid #ab1e12;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            style="
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.15em;
-              color: #ab1e12;
-              margin-bottom: 16px;
-            "
-          >
-            03
-          </div>
-          <div
-            style="
-              font-size: 18px;
-              font-weight: 700;
-              color: #0d0d0d;
-              margin-bottom: 8px;
-            "
-          >
-            Producción en herramienta
-          </div>
-          <div
-            style="
-              font-size: 13px;
-              font-weight: 400;
-              color: #666666;
-              line-height: 1.6;
-              margin-bottom: 24px;
-              flex-grow: 1;
-            "
-          >
-            Tutorial paso a paso en tu herramienta asignada
-          </div>
-          <button
-            style="
-              width: 100%;
-              padding: 12px;
-              border: 1.5px solid #ab1e12;
-              border-radius: 0;
-              background-color: transparent;
-              color: #ab1e12;
-              font-size: 12px;
-              font-weight: 700;
-              letter-spacing: 0.1em;
-              cursor: pointer;
-              transition: 200ms ease;
-              font-family: &quot;Inter&quot;, sans-serif;
-              box-sizing: border-box;
-            "
-            onmouseover="
-              this.style.backgroundColor = '#AB1E12';
-              this.style.color = '#FFFFFF';
-            "
-            onmouseout="
-              this.style.backgroundColor = 'transparent';
-              this.style.color = '#AB1E12';
-            "
-          >
-            Ingresar
-          </button>
-        </div>
-
-        <div
-          style="
-            background-color: #ffffff;
-            padding: 32px;
-            border-top: 3px solid #ab1e12;
-            display: flex;
-            flex-direction: column;
-            box-sizing: border-box;
-          "
-        >
-          <div
-            style="
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.15em;
-              color: #ab1e12;
-              margin-bottom: 16px;
-            "
-          >
-            04
-          </div>
-          <div
-            style="
-              font-size: 18px;
-              font-weight: 700;
-              color: #0d0d0d;
-              margin-bottom: 8px;
-            "
-          >
-            Revisión y cierre
-          </div>
-          <div
-            style="
-              font-size: 13px;
-              font-weight: 400;
-              color: #666666;
-              line-height: 1.6;
-              margin-bottom: 24px;
-              flex-grow: 1;
-            "
-          >
-            Implementación, reflexión y entregables finales
-          </div>
-          <button
-            style="
-              width: 100%;
-              padding: 12px;
-              border: 1.5px solid #ab1e12;
-              border-radius: 0;
-              background-color: transparent;
-              color: #ab1e12;
-              font-size: 12px;
-              font-weight: 700;
-              letter-spacing: 0.1em;
-              cursor: pointer;
-              transition: 200ms ease;
-              font-family: &quot;Inter&quot;, sans-serif;
-              box-sizing: border-box;
-            "
-            onmouseover="
-              this.style.backgroundColor = '#AB1E12';
-              this.style.color = '#FFFFFF';
-            "
-            onmouseout="
-              this.style.backgroundColor = 'transparent';
-              this.style.color = '#AB1E12';
-            "
-          >
-            Ingresar
-          </button>
         </div>
       </div>
     </div>
