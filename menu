@@ -1,90 +1,297 @@
-<div class="ibero-menu-container container-fluid py-5">
-  <style>
-    .ibero-menu-container {
-      font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #FFFFFF;
-    }
-    .ibero-menu-container .card {
-      border: 1px solid #e9ecef;
-      border-top: 4px solid #EB0029;
-      background-color: #FFFFFF;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-    }
-    .ibero-menu-container .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    }
-    .ibero-menu-container .card-title {
-      color: #000000;
-      font-weight: 600;
-    }
-    .ibero-menu-container .card-text {
-      color: #83786F;
-      font-size: 0.95rem;
-      line-height: 1.5;
-    }
-    .ibero-menu-container .btn {
-      color: #EB0029;
-      border: 1px solid #EB0029;
-      background-color: transparent;
-      transition: all 0.3s ease;
-      font-weight: 500;
-    }
-    .ibero-menu-container .btn:hover {
-      color: #FFFFFF;
-      background-color: #EB0029;
-      text-decoration: none;
-    }
-  </style>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<title>Sistema Visual MiniTIC — Preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #F4F4F4;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 
-  <div class="row px-lg-4">
-    <div class="col-12 col-md-6 col-lg-3 mb-4">
-      <div class="card h-100 text-center p-3">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <div class="w-100">
-            <h5 class="card-title mb-3">Bloque 1</h5>
-            <p class="card-text mb-4">Encuadre y diagnóstico</p>
-          </div>
-          <a href="#" class="btn w-100 mt-auto">Ingresar</a>
-        </div>
+  /* ─── SECTION LABEL ─── */
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 12px;
+  }
+
+  /* ══════════════════════════════════════════
+     1. BANNER HERO
+  ══════════════════════════════════════════ */
+  .hero {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    background: #0D0D0D;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .hero-bar {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 6px;
+    background: #AB1E12;
+  }
+  .hero-tag {
+    position: absolute;
+    top: 0; right: 0;
+    background: #AB1E12;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 9px 18px;
+    font-family: 'Inter', sans-serif;
+  }
+  .hero-content {
+    padding-left: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .hero-eyebrow {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #AB1E12;
+    font-family: 'Inter', sans-serif;
+  }
+  .hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    max-width: 680px;
+  }
+
+  /* ══════════════════════════════════════════
+     2. BLOQUE DE BIENVENIDA
+  ══════════════════════════════════════════ */
+  .welcome {
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .welcome-text {
+    padding: 52px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-right: 1px solid #E8E8E8;
+  }
+  .welcome-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #AB1E12;
+    font-family: 'Inter', sans-serif;
+  }
+  .welcome-title {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: #0D0D0D;
+    font-family: 'Inter', sans-serif;
+  }
+  .welcome-body {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #444;
+    font-family: 'Inter', sans-serif;
+  }
+  .welcome-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F4F4F4;
+  }
+  .video-placeholder {
+    width: calc(100% - 56px);
+    aspect-ratio: 16/9;
+    border: 1px solid #0D0D0D;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 28px;
+  }
+  .video-icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-icon svg { display: block; }
+  .video-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #999;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* ══════════════════════════════════════════
+     3. TARJETAS DE BLOQUE
+  ══════════════════════════════════════════ */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    border: 1px solid #E0E0E0;
+  }
+  .card {
+    background: #FFFFFF;
+    border-top: 3px solid #AB1E12;
+    border-right: 1px solid #E0E0E0;
+    padding: 36px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card:last-child { border-right: none; }
+  .card-number {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #AB1E12;
+    font-family: 'Inter', sans-serif;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    color: #0D0D0D;
+    font-family: 'Inter', sans-serif;
+    flex: 1;
+  }
+  .card-desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666;
+    font-family: 'Inter', sans-serif;
+    min-height: 44px;
+  }
+  .card-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #AB1E12;
+    border: 1.5px solid #AB1E12;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.15s, color 0.15s;
+  }
+  .card-btn:hover {
+    background: #AB1E12;
+    color: #FFFFFF;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ─── 1. BANNER HERO ─── -->
+  <div>
+    <p class="section-label">Componente 1 — Banner Hero (1200×300px)</p>
+    <div class="hero">
+      <div class="hero-bar"></div>
+      <div class="hero-tag">MiniTIC</div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">MiniTIC · Universidad Iberoamericana León</span>
+        <h1 class="hero-title">Diseño de experiencias de microaprendizaje</h1>
       </div>
     </div>
+  </div>
 
-    <div class="col-12 col-md-6 col-lg-3 mb-4">
-      <div class="card h-100 text-center p-3">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <div class="w-100">
-            <h5 class="card-title mb-3">Bloque 2</h5>
-            <p class="card-text mb-4">Diseño de la experiencia</p>
-          </div>
-          <a href="#" class="btn w-100 mt-auto">Ingresar</a>
-        </div>
+  <!-- ─── 2. BLOQUE DE BIENVENIDA ─── -->
+  <div>
+    <p class="section-label">Componente 2 — Bloque de Bienvenida</p>
+    <div class="welcome">
+      <div class="welcome-text">
+        <span class="welcome-eyebrow">Bienvenida al curso</span>
+        <h2 class="welcome-title">Aprende a diseñar experiencias de aprendizaje que realmente funcionan.</h2>
+        <p class="welcome-body">Este curso te guiará a través del diseño, producción y evaluación de microcontenidos educativos efectivos para entornos digitales universitarios.</p>
       </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-3 mb-4">
-      <div class="card h-100 text-center p-3">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <div class="w-100">
-            <h5 class="card-title mb-3">Bloque 3</h5>
-            <p class="card-text mb-4">Producción en herramienta</p>
+      <div class="welcome-video">
+        <div class="video-placeholder">
+          <div class="video-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L13 8L1 15V1Z" fill="#0D0D0D"/>
+            </svg>
           </div>
-          <a href="#" class="btn w-100 mt-auto">Ingresar</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-lg-3 mb-4">
-      <div class="card h-100 text-center p-3">
-        <div class="card-body d-flex flex-column align-items-center justify-content-between">
-          <div class="w-100">
-            <h5 class="card-title mb-3">Bloque 4</h5>
-            <p class="card-text mb-4">Revisión, estrategia y cierre</p>
-          </div>
-          <a href="#" class="btn w-100 mt-auto">Ingresar</a>
+          <span class="video-label">Video de bienvenida</span>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- ─── 3. TARJETAS DE BLOQUE ─── -->
+  <div>
+    <p class="section-label">Componente 3 — Tarjetas de Bloque</p>
+    <div class="cards-grid">
+      <div class="card">
+        <span class="card-number">Bloque 01</span>
+        <h3 class="card-title">Encuadre y diagnóstico</h3>
+        <p class="card-desc">Punto de partida: contexto, necesidades y mapa del curso.</p>
+        <a href="#" class="card-btn">Ingresar</a>
+      </div>
+      <div class="card">
+        <span class="card-number">Bloque 02</span>
+        <h3 class="card-title">Diseño de la experiencia</h3>
+        <p class="card-desc">Estructura pedagógica, objetivos y flujo de aprendizaje.</p>
+        <a href="#" class="card-btn">Ingresar</a>
+      </div>
+      <div class="card">
+        <span class="card-number">Bloque 03</span>
+        <h3 class="card-title">Producción en herramienta</h3>
+        <p class="card-desc">Creación de microcontenidos con herramientas digitales.</p>
+        <a href="#" class="card-btn">Ingresar</a>
+      </div>
+      <div class="card">
+        <span class="card-number">Bloque 04</span>
+        <h3 class="card-title">Revisión, estrategia y cierre</h3>
+        <p class="card-desc">Evaluación, iteración y transferencia al aula universitaria.</p>
+        <a href="#" class="card-btn">Ingresar</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
