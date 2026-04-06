@@ -1,7 +1,7 @@
 <div class="container-fluid" style="width: 100%; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 0; box-sizing: border-box;">
 
   <!-- Hero Banner -->
-  <div class="d-flex flex-wrap align-items-center justify-content-between" style="background-color: #f4f4f4; border-radius: 20px; margin-bottom: 40px; padding: 40px; width: 100%; box-sizing: border-box;">
+  <div class="d-flex flex-wrap align-items-center justify-content-between" style="background-color: #f4f4f4; border-radius: 20px; margin-bottom: 60px; padding: 30px 50px; width: 100%; box-sizing: border-box;">
     <!-- Text Column -->
     <div style="flex: 1 1 50%; padding-right: 20px; box-sizing: border-box; min-width: 300px;">
       <!-- Branding Elements -->
@@ -23,12 +23,14 @@
 
     <!-- Image Column -->
     <div style="flex: 1 1 40%; display: flex; justify-content: flex-end; align-items: center; box-sizing: border-box; min-width: 300px; margin-top: 20px;">
-      <img src="https://iberoleonedu-my.sharepoint.com/:i:/g/personal/diego_torres_iberoleon_edu_mx/IQDogKc9SJNsQocUfrS_n8x7AcceDrb4Bih0RqR6ysYgsrU?e=pzR95R" alt="Hero Image" style="max-width: 100%; height: auto; border-radius: 20px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+      <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); padding: 15px; display: inline-block;">
+        <img src="https://cursos.iberoleon.mx/online/draftfile.php/2148825/user/draft/855858473/cc13c751-f37f-4034-8de9-059e04737080.jpg" alt="Hero Image" style="max-width: 280px; height: auto; border-radius: 10px; object-fit: cover; display: block;">
+      </div>
     </div>
   </div>
 
   <!-- Welcome Section -->
-  <div class="row mb-5" style="padding: 0 15px;">
+  <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
     <!-- Left Column -->
     <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
       <span style="color: #EB0029; font-weight: 700; font-size: 14px; text-transform: uppercase; margin-bottom: 8px; display: block; letter-spacing: 1px;">Bienvenida</span>
@@ -51,7 +53,7 @@
   </div>
 
   <!-- Course Grid -->
-  <div class="row" style="padding: 0 15px;">
+  <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
     <!-- Card 1 -->
     <div class="col-lg-3 col-md-6 mb-4">
       <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
