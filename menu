@@ -1,53 +1,63 @@
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
 <div class="container-fluid" style="width: 100%; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 0; box-sizing: border-box;">
 
   <!-- Hero Banner -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-  <div style="position:relative; overflow:hidden; background:#F7F7F5; display:flex; align-items:center; width:100%; height:460px; padding:0; margin-bottom:60px; font-family:'Inter',sans-serif; box-sizing:border-box;">
+  <div style="position:relative; overflow:hidden; background:#f5f5f3; width:100%; min-height:420px; display:flex; align-items:center; border-radius:20px; box-sizing:border-box; font-family:'Inter',sans-serif;">
 
-    <!-- Max-Width Wrapper -->
-    <div style="max-width:1100px; width:100%; margin:0 auto; display:flex; align-items:center; height:100%;">
+    <!-- Decorative Background Circle A -->
+    <div style="position:absolute; top:-80px; right:200px; width:280px; height:280px; border-radius:50%; border:1px solid rgba(171,30,18,0.08); pointer-events:none; z-index:0;"></div>
+    <!-- Decorative Background Circle B -->
+    <div style="position:absolute; bottom:-100px; left:30%; width:200px; height:200px; border-radius:50%; border:1px solid rgba(171,30,18,0.06); pointer-events:none; z-index:0;"></div>
 
-      <!-- Left Column — 35% Text Block -->
-      <div style="width:35%; box-sizing:border-box; padding-left:0; position:relative; z-index:2; display:flex; flex-direction:column; justify-content:center; height:100%;">
+    <!-- Inner Content Wrapper -->
+    <div style="max-width:1100px; width:100%; margin:0 auto; display:flex; align-items:center; padding:48px 56px; box-sizing:border-box; gap:48px; position:relative; z-index:2;">
+
+      <!-- Left Column -->
+      <div style="flex:0 0 42%; display:flex; flex-direction:column; justify-content:center; gap:0;">
 
         <!-- Label Row -->
-        <div style="margin-bottom:14px;">
-          <span style="display:inline-block; width:8px; height:8px; background:#AB1E12; margin-right:10px; vertical-align:middle;"></span><span style="font-size:10px; font-weight:700; letter-spacing:0.22em; color:#0D0D0D; vertical-align:middle; font-family:'Inter',sans-serif;">CURSO MINITIC</span>
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+          <img src="https://yt3.googleusercontent.com/F7Et8AFoIO68U5Z_jm51FOnvyIoLur1dBMiWVevh1wtT6dXZk1avd6U2xCGZR_fc47RblvSKZlg=s900-c-k-c0x00ffffff-no-rj" alt="Logo Ibero León" style="height:28px; width:auto; object-fit:contain; border-radius:4px;">
+          <div style="width:1px; height:16px; background:#ccc;"></div>
+          <span style="font-size:10px; font-weight:700; letter-spacing:0.2em; color:#555; text-transform:uppercase;">Curso MiniTIC</span>
         </div>
 
         <!-- Title -->
-        <div>
-          <span style="font-size:54px; font-weight:800; color:#0D0D0D; line-height:1.0; font-family:'Inter',sans-serif; display:block;">Diseño de experiencias de</span>
-          <span style="font-size:54px; font-weight:800; color:#AB1E12; line-height:1.0; font-family:'Inter',sans-serif; display:block;">microaprendizaje</span>
-        </div>
+        <h1 style="font-size:52px; font-weight:900; color:#0D0D0D; line-height:1.0; margin:0 0 4px 0; font-family:'Inter',sans-serif;">
+          <span style="color:#0D0D0D; display:block;">Diseño de experiencias de</span>
+          <span style="color:#AB1E12; display:block;">microaprendizaje</span>
+        </h1>
 
         <!-- Subtitle -->
-        <div style="margin-top:12px;">
-          <span style="font-size:13px; font-weight:400; color:#555555; letter-spacing:0.08em; font-family:'Inter',sans-serif;">Universidad Iberoamericana León</span>
-        </div>
+        <p style="font-size:13px; color:#777; margin:14px 0 28px 0; letter-spacing:0.04em; font-family:'Inter',sans-serif;">Universidad Iberoamericana León</p>
 
         <!-- CTA Button -->
-        <a href="#" style="display:inline-block; background:#AB1E12; color:#FFFFFF; border-radius:6px; padding:10px 22px; font-size:11px; font-weight:700; letter-spacing:0.14em; font-family:'Inter',sans-serif; text-decoration:none; margin-top:28px;">MODALIDAD VIRTUAL</a>
+        <a href="#" style="display:inline-block; background:#AB1E12; color:#fff; font-size:11px; font-weight:700; letter-spacing:0.14em; text-decoration:none; padding:12px 26px; border-radius:8px; text-transform:uppercase; align-self:flex-start; font-family:'Inter',sans-serif;">MODALIDAD VIRTUAL</a>
 
       </div>
 
-      <!-- Right Column — 65% Illustration -->
-      <div style="width:65%; position:relative; height:420px; overflow:hidden;">
+      <!-- Right Column -->
+      <div style="flex:1; position:relative; display:flex; align-items:flex-end; justify-content:center; min-height:360px;">
 
-        <!-- Pink Blob -->
-        <div style="position:absolute; bottom:-100px; right:-100px; width:480px; height:480px; background:#FDEAEB; border-radius:50%; z-index:0;"></div>
+        <!-- Blob 1 -->
+        <div style="position:absolute; bottom:-60px; left:-40px; width:200px; height:200px; background:#FDEAEB; border-radius:50%; z-index:0;"></div>
+        <!-- Blob 2 -->
+        <div style="position:absolute; top:-50px; right:-30px; width:140px; height:140px; background:#FDEAEB; border-radius:50%; z-index:0;"></div>
 
-        <!-- Illustration Image -->
-        <img src="https://cursos.iberoleon.mx/online/draftfile.php/2148825/user/draft/834086882/cc13c751-f37f-4034-8de9-059e04737080.jpg" alt="Ilustración del curso" style="position:absolute; bottom:0; right:0; height:460px; width:auto; z-index:1; object-fit:contain;">
-
-        <!-- Floating Icon 1 — Lightbulb -->
-        <div style="position:absolute; top:140px; left:10px; width:42px; height:42px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:17px; box-shadow:0 2px 10px rgba(0,0,0,0.07); z-index:3;">💡</div>
-
-        <!-- Floating Icon 2 — Graduation Cap -->
-        <div style="position:absolute; top:50px; right:80px; width:42px; height:42px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:17px; box-shadow:0 2px 10px rgba(0,0,0,0.07); z-index:3;">🎓</div>
-
-        <!-- Floating Icon 3 — Pencil -->
-        <div style="position:absolute; top:290px; left:15px; width:42px; height:42px; background:#FFFFFF; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:17px; box-shadow:0 2px 10px rgba(0,0,0,0.07); z-index:3;">✏️</div>
+        <!-- Image Frame -->
+        <div style="width:100%; height:340px; border-radius:24px; overflow:hidden; position:relative;">
+          <!-- Background Image -->
+          <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/a6/7c/38/b7/37/v1_E10/E106M563.jpg?w=1600&cf_fit=scale-down&q=85&format=auto&s=0cf5ba427a8a7ecdcc8ec73c2fa2acea219f409b0c2af0e7e03e3ff7cc3a6547" alt="Fondo del curso" style="width:100%; height:100%; object-fit:cover; object-position:center top; display:block;">
+          <!-- Overlay -->
+          <div style="position:absolute; inset:0; background:rgba(171,30,18,0.18); border-radius:24px;"></div>
+          <!-- Floating Pill -->
+          <div style="position:absolute; bottom:20px; left:20px; background:rgba(255,255,255,0.92); border-radius:50px; padding:10px 18px; display:flex; align-items:center; gap:10px; z-index:3;">
+            <div style="width:8px; height:8px; background:#AB1E12; border-radius:50%;"></div>
+            <span style="font-size:11px; font-weight:700; color:#0D0D0D; letter-spacing:0.06em;">Modalidad virtual</span>
+          </div>
+          <!-- Tag -->
+          <div style="position:absolute; top:20px; right:20px; background:#AB1E12; color:#fff; font-size:10px; font-weight:700; letter-spacing:0.1em; padding:6px 14px; border-radius:50px; z-index:3; text-transform:uppercase;">MiniTIC 2025</div>
+        </div>
 
       </div>
 
