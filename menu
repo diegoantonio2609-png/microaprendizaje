@@ -1,57 +1,40 @@
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 <div class="container-fluid" style="width: 100%; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 0; box-sizing: border-box;">
 
   <!-- Hero Banner -->
-  <div style="width:100%; min-height:460px; background:#F4F3F0; display:flex; align-items:stretch; overflow:hidden; position:relative; box-sizing:border-box; font-family:'Inter',sans-serif;">
+  <section style="position:relative; width:100%; min-height:347px; height:72vh; max-height:520px; overflow:hidden; margin-bottom:60px;">
 
-    <!-- Left Column -->
-    <div style="flex:0 0 50%; padding:56px 40px 56px 56px; display:flex; flex-direction:column; justify-content:center; box-sizing:border-box; position:relative; z-index:2;">
-
-      <!-- Logo Row -->
-      <div style="display:flex; align-items:center; gap:12px; margin-bottom:32px;">
-        <img src="https://yt3.googleusercontent.com/F7Et8AFoIO68U5Z_jm51FOnvyIoLur1dBMiWVevh1wtT6dXZk1avd6U2xCGZR_fc47RblvSKZlg=s900-c-k-c0x00ffffff-no-rj" alt="Logo Ibero León" style="height:40px; width:auto; object-fit:contain; border-radius:6px; background:#ffffff; padding:4px 8px;">
-        <div style="width:1px; height:22px; background:rgba(0,0,0,0.2);"></div>
-        <span style="font-size:11px; font-weight:700; letter-spacing:0.18em; color:#888888; text-transform:uppercase;">Curso MiniTIC</span>
-      </div>
-
-      <!-- Title -->
-      <h2 style="margin:0; padding:0; line-height:1.02; font-family:'Inter',sans-serif;">
-        <span style="font-size:52px; font-weight:900; color:#0D0D0D; display:block; line-height:1.02;">Diseño de experiencias de</span>
-        <span style="font-size:52px; font-weight:900; color:#AB1E12; display:block; line-height:1.02;">microaprendizaje</span>
-      </h2>
-
-      <!-- Subtitle -->
-      <p style="font-size:14px; color:#777777; margin:20px 0 32px 0; letter-spacing:0.04em; font-family:'Inter',sans-serif;">Universidad Iberoamericana León</p>
-
-      <!-- CTA Button -->
-      <a href="#" style="display:inline-block; background:#AB1E12; color:#ffffff; font-size:13px; font-weight:700; letter-spacing:0.08em; text-decoration:none; padding:14px 32px; border-radius:10px; text-transform:uppercase; font-family:'Inter',sans-serif; align-self:flex-start;">Modalidad virtual</a>
-
+    <!-- Background image -->
+    <div style="position:absolute; inset:0; z-index:1;">
+      <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/a6/7c/38/b7/37/v1_E10/E106M563.jpg?w=1600&cf_fit=scale-down&q=85&format=auto&s=0cf5ba427a8a7ecdcc8ec73c2fa2acea219f409b0c2af0e7e03e3ff7cc3a6547" alt="Fondo del curso" style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
     </div>
 
-    <!-- Right Column -->
-    <div style="flex:0 0 50%; position:relative; display:flex; align-items:center; justify-content:center; padding:40px 48px 40px 20px; box-sizing:border-box; overflow:visible;">
+    <!-- Gradient overlay -->
+    <div style="position:absolute; inset:0; z-index:2; background:linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.75) 100%);"></div>
 
-      <!-- Decorative Blob -->
-      <div style="position:absolute; bottom:-40px; right:-40px; width:260px; height:260px; background:#FDEAEB; border-radius:50%; z-index:0;"></div>
+    <!-- Content container -->
+    <div style="position:relative; z-index:3; height:100%; min-height:347px; max-width:1200px; margin:0 auto; padding:32px 48px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
 
-      <!-- Image Frame -->
-      <div style="width:100%; height:360px; border-radius:24px; overflow:hidden; position:relative; z-index:1;">
-        <!-- Background Image -->
-        <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/a6/7c/38/b7/37/v1_E10/E106M563.jpg?w=1600&cf_fit=scale-down&q=85&format=auto&s=0cf5ba427a8a7ecdcc8ec73c2fa2acea219f409b0c2af0e7e03e3ff7cc3a6547" alt="Fondo del curso" style="width:100%; height:100%; object-fit:cover; object-position:center center; display:block; position:absolute; inset:0;">
-        <!-- Color Overlay -->
-        <div style="position:absolute; inset:0; background:rgba(13,13,13,0.22); z-index:1;"></div>
-        <!-- Floating Pill -->
-        <div style="position:absolute; bottom:20px; left:20px; background:rgba(255,255,255,0.95); border-radius:50px; padding:10px 20px; display:flex; align-items:center; gap:10px; z-index:2;">
-          <div style="width:8px; height:8px; background:#AB1E12; border-radius:50%;"></div>
-          <span style="font-size:12px; font-weight:700; color:#0D0D0D; letter-spacing:0.04em; font-family:'Inter',sans-serif;">Modalidad virtual</span>
-        </div>
-        <!-- Year Tag -->
-        <div style="position:absolute; top:20px; right:20px; background:#AB1E12; color:#ffffff; font-size:11px; font-weight:700; letter-spacing:0.1em; padding:7px 16px; border-radius:50px; z-index:2; text-transform:uppercase; font-family:'Inter',sans-serif;">MiniTIC 2025</div>
+      <!-- Logo -->
+      <div>
+        <img src="https://yt3.googleusercontent.com/F7Et8AFoIO68U5Z_jm51FOnvyIoLur1dBMiWVevh1wtT6dXZk1avd6U2xCGZR_fc47RblvSKZlg=s900-c-k-c0x00ffffff-no-rj" alt="Universidad Iberoamericana León" style="height:52px; width:auto; object-fit:contain; display:block; filter:brightness(0) invert(1);">
+      </div>
+
+      <!-- Text block -->
+      <div style="max-width:800px;">
+        <p style="margin:0 0 12px 0; font-size:13px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.75); font-family:'Montserrat', system-ui, sans-serif;">Universidad Iberoamericana León</p>
+        <h2 style="margin:0 0 32px 0; font-family:'Montserrat', system-ui, sans-serif; font-size:clamp(32px, 4vw, 54px); font-weight:600; line-height:1.15; color:#ffffff; letter-spacing:-0.01em;">Diseño de experiencias de<br>microaprendizaje</h2>
+        <a href="#" style="display:inline-block; padding:14px 32px; background-color:#ffffff; color:#1a1a1a; font-size:14px; font-weight:600; text-decoration:none; border-radius:50px; font-family:'Montserrat', system-ui, sans-serif;">Modalidad virtual</a>
       </div>
 
     </div>
 
-  </div>
+    <!-- Brand accent line -->
+    <div style="position:absolute; bottom:0; left:0; right:0; height:4px; background-color:#AB1E12; z-index:4;"></div>
+
+  </section>
 
   <!-- Welcome Section -->
   <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
