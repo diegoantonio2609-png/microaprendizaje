@@ -1,101 +1,96 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 <div class="container-fluid" style="width: 100%; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; padding: 0; box-sizing: border-box;">
 
-  <!-- Hero Banner -->
-  <section style="position:relative; width:100%; min-height:347px; height:72vh; max-height:520px; overflow:hidden; margin-bottom:60px;">
+    <!-- Hero Banner -->
+    <section style="position:relative; width:100%; min-height:347px; height:72vh; max-height:520px; overflow:hidden; margin-bottom:60px;">
 
-    <!-- Background image -->
-    <div style="position:absolute; inset:0; z-index:1;">
-      <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/a6/7c/38/b7/37/v1_E10/E106M563.jpg?w=1600&cf_fit=scale-down&q=85&format=auto&s=0cf5ba427a8a7ecdcc8ec73c2fa2acea219f409b0c2af0e7e03e3ff7cc3a6547" alt="Fondo del curso" style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
-    </div>
-
-    <!-- Gradient overlay -->
-    <div style="position:absolute; inset:0; z-index:2; background:linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.82) 100%);"></div>
-
-    <!-- Content container -->
-    <div style="position:relative; z-index:3; height:100%; min-height:347px; max-width:1200px; margin:0 auto; padding:32px 48px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
-
-      <!-- Logo -->
-      <div>
-        <img src="https://yt3.googleusercontent.com/F7Et8AFoIO68U5Z_jm51FOnvyIoLur1dBMiWVevh1wtT6dXZk1avd6U2xCGZR_fc47RblvSKZlg=s900-c-k-c0x00ffffff-no-rj" alt="Universidad Iberoamericana León" style="height:56px; width:auto; object-fit:contain; display:block;">
-      </div>
-
-      <!-- Text block -->
-      <div style="max-width:800px;">
-        <p style="margin:0 0 12px 0; font-size:13px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.75); font-family:'Montserrat', system-ui, sans-serif;">Universidad Iberoamericana León</p>
-        <h2 style="margin:0 0 32px 0; font-family:'Montserrat', system-ui, sans-serif; font-size:clamp(32px, 4vw, 54px); font-weight:600; line-height:1.15; color:#ffffff; letter-spacing:-0.01em;">Diseño de experiencias de<br>microaprendizaje</h2>
-        <a href="#" style="display:inline-block; padding:14px 32px; background-color:#ffffff; color:#1a1a1a; font-size:14px; font-weight:600; text-decoration:none; border-radius:50px; font-family:'Montserrat', system-ui, sans-serif;">Modalidad virtual</a>
-      </div>
-
-    </div>
-
-    <!-- Brand accent line -->
-    <div style="position:absolute; bottom:0; left:0; right:0; height:4px; background-color:#AB1E12; z-index:4;"></div>
-
-  </section>
-
-  <!-- Welcome Section -->
-  <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
-    <!-- Left Column -->
-    <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
-      <span style="color: #EB0029; font-weight: 700; font-size: 14px; text-transform: uppercase; margin-bottom: 8px; display: block; letter-spacing: 1px;">Bienvenida</span>
-      <h2 style="font-size: 32px; font-weight: 800; color: #1a1a1a; margin-bottom: 20px;">Sobre el curso</h2>
-      <p style="font-size: 16px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin: 0;">
-        Aprende a diseñar experiencias de aprendizaje que realmente funcionan. Este curso te guiará a través del diseño, producción y evaluación de microcontenidos educativos efectivos para entornos digitales universitarios.
-      </p>
-    </div>
-    <!-- Right Column: Video Placeholder -->
-    <div class="col-md-6 mb-4">
-      <div style="background-color: #ffffff; border-radius: 20px; border: 1px dashed #cccccc; padding: 40px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 250px; box-sizing: border-box;">
-        <div style="width: 64px; height: 64px; background-color: #EB0029; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 4px 10px rgba(235, 0, 41, 0.3);">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
-            <path d="M5 3L19 12L5 21V3Z" fill="#ffffff"/>
-          </svg>
+        <!-- Background image -->
+        <div style="position:absolute; inset:0; z-index:1;">
+            <img src="https://elements-resized.envatousercontent.com/envato-dam-assets-production/EVA/TRX/a6/7c/38/b7/37/v1_E10/E106M563.jpg?w=1600&amp;cf_fit=scale-down&amp;q=85&amp;format=auto&amp;s=0cf5ba427a8a7ecdcc8ec73c2fa2acea219f409b0c2af0e7e03e3ff7cc3a6547" alt="Fondo del curso" style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;">
         </div>
-        <p style="font-size: 14px; color: #666666; margin: 0; font-weight: 500;">Reproducir video introductorio</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Course Grid -->
-  <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
-    <!-- Card 1 -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
-        <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 1: Encuadre y diagnóstico</h3>
-        <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Fundamentos del microaprendizaje y selección de herramienta.</p>
-        <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
-      </div>
+        <!-- Gradient overlay -->
+        <div style="position:absolute; inset:0; z-index:2; background:linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.1) 30%, rgba(0,0,0,0.55) 60%, rgba(0,0,0,0.92) 100%);"></div>
+
+        <!-- Content container -->
+        <div style="position:relative; z-index:3; height:100%; min-height:347px; max-width:1200px; margin:0 auto; padding:32px 48px; box-sizing:border-box; display:flex; flex-direction:column; justify-content:space-between;">
+
+            <!-- Logo -->
+            <div>
+                <img src="https://yt3.googleusercontent.com/F7Et8AFoIO68U5Z_jm51FOnvyIoLur1dBMiWVevh1wtT6dXZk1avd6U2xCGZR_fc47RblvSKZlg=s900-c-k-c0x00ffffff-no-rj" alt="Universidad Iberoamericana León" style="height:100px; width:auto; object-fit:contain; display:block;">
+            </div>
+
+            <!-- Text block -->
+            <div style="max-width:800px;">
+                <p style="margin:0 0 12px 0; font-size:13px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.75); font-family:'Montserrat', system-ui, sans-serif;">Universidad Iberoamericana León</p>
+                <h2 style="margin:0 0 32px 0; font-family:'Montserrat', system-ui, sans-serif; font-size:clamp(32px, 4vw, 54px); font-weight:600; line-height:1.15; color:#ffffff; letter-spacing:-0.01em;">Diseño de experiencias de<br>microaprendizaje</h2>
+                <a href="#" style="display:inline-block; padding:14px 32px; background-color:#ffffff; color:#1a1a1a; font-size:14px; font-weight:600; text-decoration:none; border-radius:50px; font-family:'Montserrat', system-ui, sans-serif;">Modalidad virtual</a>
+            </div>
+
+        </div>
+
+        <!-- Brand accent line -->
+        <div style="position:absolute; bottom:0; left:0; right:0; height:4px; background-color:#AB1E12; z-index:4;"></div>
+
+    </section>
+
+    <!-- Welcome Section -->
+    <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-4 d-flex flex-column justify-content-center">
+            <span style="color: #EB0029; font-weight: 700; font-size: 14px; text-transform: uppercase; margin-bottom: 8px; display: block; letter-spacing: 1px;">Bienvenida</span>
+            <h2 style="font-size: 32px; font-weight: 800; color: #1a1a1a; margin-bottom: 20px;">Sobre el curso</h2>
+            <p style="font-size: 16px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin: 0;">Este curso parte de una pregunta que los docentes nos hacemos pocas veces: ¿cómo aprenden, en realidad, las personas que tenemos enfrente?<br>En cuatro horas de trabajo conocerás una propuesta de diseño pedagógico llamada microaprendizaje, y descubrirás cómo puede convertirse en una herramienta concreta para tus clases y, sobre todo, para fomentar el aprendizaje significativo en tus estudiantes.<br>El punto de partida eres tú — y las personas que tienes enfrente cada vez que entras al aula.<br>Te invitamos a comenzar con el video de bienvenida.</p>
+        </div>
+        <!-- Right Column: Video Placeholder -->
+        <div class="col-md-6 mb-4">
+            <div style="background-color: #ffffff; border-radius: 20px; border: 1px dashed #cccccc; padding: 40px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; min-height: 250px; box-sizing: border-box;">
+                <div style="width: 64px; height: 64px; background-color: #EB0029; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 4px 10px rgba(235, 0, 41, 0.3);">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 4px;">
+                        <path d="M5 3L19 12L5 21V3Z" fill="#ffffff"></path>
+                    </svg>
+                </div>
+                <p style="font-size: 14px; color: #666666; margin: 0; font-weight: 500;">Reproducir video introductorio</p>
+            </div>
+        </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
-        <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 2: Diseño de la experiencia</h3>
-        <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Objetivo, estructura y retroalimentación.</p>
-        <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
-      </div>
-    </div>
+    <!-- Course Grid -->
+    <div class="row" style="padding: 0 15px; margin-bottom: 60px;">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
+                <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 1: Encuadre y diagnóstico</h3>
+                <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Fundamentos del microaprendizaje y selección de herramienta.</p>
+                <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
+            </div>
+        </div>
 
-    <!-- Card 3 -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
-        <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 3: Producción en herramienta</h3>
-        <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Tutorial paso a paso en tu herramienta asignada.</p>
-        <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
-      </div>
-    </div>
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
+                <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 2: Diseño de la experiencia</h3>
+                <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Objetivo, estructura y retroalimentación.</p>
+                <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
+            </div>
+        </div>
 
-    <!-- Card 4 -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
-        <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 4: Revisión y cierre</h3>
-        <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Implementación, reflexión y entregables finales.</p>
-        <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
-      </div>
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
+                <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 3: Producción en herramienta</h3>
+                <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Tutorial paso a paso en tu herramienta asignada.</p>
+                <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div style="background-color: #ffffff; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border-top: 4px solid #EB0029; padding: 3rem 2rem; display: flex; flex-direction: column; height: 100%; box-sizing: border-box; text-align: center;">
+                <h3 style="font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px;">Bloque 4: Revisión y cierre</h3>
+                <p style="font-size: 14px; font-weight: 400; color: #1a1a1a; line-height: 1.6; margin-bottom: 24px; flex-grow: 1;">Implementación, reflexión y entregables finales.</p>
+                <a href="#" style="display: inline-block; width: 100%; background-color: #EB0029; color: #ffffff; font-weight: bold; text-transform: uppercase; border-radius: 50px; padding: 12px 24px; text-decoration: none; text-align: center; font-size: 14px; box-sizing: border-box;">Ingresar</a>
+            </div>
+        </div>
     </div>
-  </div>
 
 </div>
