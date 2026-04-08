@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 3 - Orientación de ruta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; background-color: #ffffff; color: #333333;">
+
+    <!-- Section 3.1 -->
+    <section style="padding: 60px 20px; max-width: 900px; margin: 0 auto;">
+        
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <span style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;">3.1</span>
+            <h2 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Orientación de ruta</h2>
+            <p style="font-size: 16px; color: #555555; line-height: 1.6; margin: 0; max-width: 600px; margin-left: auto; margin-right: auto;">Según tu diagnóstico, esta es la herramienta con la que vas a trabajar. A continuación encontrarás el tutorial diseñado para ti.</p>
+        </div>
+
+        <!-- Cards Container -->
+        <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; margin-bottom: 32px;">
+            
+            <!-- Card 1: Wayground -->
+            <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 16px; padding: 32px; width: 320px; text-align: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);">
+                <h3 style="font-size: 22px; font-weight: 700; color: #1a1a1a; margin: 0 0 12px 0;">Wayground</h3>
+                <p style="font-size: 15px; color: #666666; line-height: 1.5; margin: 0 0 24px 0;">Continúa con tu tutorial de Wayground</p>
+                <a href="#" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; text-decoration: none; padding: 12px 28px; border-radius: 50px;">Continuar con Wayground</a>
+            </div>
+
+            <!-- Card 2: NotebookLM -->
+            <div style="background-color: #ffffff; border: 1px solid #e0e0e0; border-radius: 16px; padding: 32px; width: 320px; text-align: center; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);">
+                <h3 style="font-size: 22px; font-weight: 700; color: #1a1a1a; margin: 0 0 12px 0;">NotebookLM</h3>
+                <p style="font-size: 15px; color: #666666; line-height: 1.5; margin: 0 0 24px 0;">Continúa con tu tutorial de NotebookLM</p>
+                <a href="#" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; text-decoration: none; padding: 12px 28px; border-radius: 50px;">Continuar con NotebookLM</a>
+            </div>
+
+        </div>
+
+        <!-- Note -->
+        <p style="text-align: center; font-size: 13px; color: #888888; margin: 0;">Puedes cambiar de ruta en cualquier momento.</p>
+
+    </section>
+
+    <!-- Divider -->
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 0 auto; max-width: 900px;">
+
+    <!-- Section 3.2 -->
+    <section style="padding: 60px 20px; max-width: 900px; margin: 0 auto;">
+        
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <span style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;">3.2</span>
+            <h2 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Tutorial: Wayground</h2>
+            <p style="font-size: 16px; color: #555555; line-height: 1.6; margin: 0; max-width: 600px; margin-left: auto; margin-right: auto;">Aprenderás a construir tu recurso de microaprendizaje paso a paso en Wayground.</p>
+        </div>
+
+        <!-- Two Columns -->
+        <div style="display: flex; gap: 32px; flex-wrap: wrap;">
+            
+            <!-- Left Column: Video Placeholder (55%) -->
+            <!-- REEMPLAZAR CON IFRAME YOUTUBE 3.2 -->
+            <div style="flex: 1 1 55%; min-width: 300px;">
+                <div style="background-color: #f0f0f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <svg style="width: 64px; height: 64px; margin-bottom: 16px;" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11" stroke="#AB1E12" stroke-width="2"/>
+                        <path d="M10 8L16 12L10 16V8Z" fill="#AB1E12"/>
+                    </svg>
+                    <p style="font-size: 14px; color: #888888; margin: 0;">El video estará disponible en breve</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Instructions (45%) -->
+            <div style="flex: 1 1 40%; min-width: 250px; border-left: 3px solid #AB1E12; padding-left: 24px;">
+                <span style="display: block; font-size: 12px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Mientras ves el tutorial</span>
+                <p style="font-size: 15px; color: #555555; line-height: 1.7; margin: 0;">Ve construyendo tu recurso en paralelo. Cuando termines el tutorial, tendrás tu experiencia lista para entregar.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Divider -->
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 0 auto; max-width: 900px;">
+
+    <!-- Section 3.3 -->
+    <section style="padding: 60px 20px; max-width: 900px; margin: 0 auto;">
+        
+        <!-- Section Header -->
+        <div style="text-align: center; margin-bottom: 40px;">
+            <span style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;">3.3</span>
+            <h2 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Tutorial: NotebookLM</h2>
+            <p style="font-size: 16px; color: #555555; line-height: 1.6; margin: 0; max-width: 600px; margin-left: auto; margin-right: auto;">Aprenderás a construir tu recurso de microaprendizaje paso a paso en NotebookLM.</p>
+        </div>
+
+        <!-- Two Columns -->
+        <div style="display: flex; gap: 32px; flex-wrap: wrap;">
+            
+            <!-- Left Column: Video Placeholder (55%) -->
+            <!-- REEMPLAZAR CON IFRAME YOUTUBE 3.3 -->
+            <div style="flex: 1 1 55%; min-width: 300px;">
+                <div style="background-color: #f0f0f0; border-radius: 12px; aspect-ratio: 16/9; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                    <svg style="width: 64px; height: 64px; margin-bottom: 16px;" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="11" stroke="#AB1E12" stroke-width="2"/>
+                        <path d="M10 8L16 12L10 16V8Z" fill="#AB1E12"/>
+                    </svg>
+                    <p style="font-size: 14px; color: #888888; margin: 0;">El video estará disponible en breve</p>
+                </div>
+            </div>
+
+            <!-- Right Column: Instructions (45%) -->
+            <div style="flex: 1 1 40%; min-width: 250px; border-left: 3px solid #AB1E12; padding-left: 24px;">
+                <span style="display: block; font-size: 12px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Mientras ves el tutorial</span>
+                <p style="font-size: 15px; color: #555555; line-height: 1.7; margin: 0;">Ve construyendo tu recurso en paralelo. Cuando termines el tutorial, tendrás tu experiencia lista para entregar.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Divider -->
+    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 0;">
+
+    <!-- Section 3.4: Entregable -->
+    <section style="background-color: #f7f6f4; padding: 48px 20px;">
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <span style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;">ENTREGABLE 3</span>
+            <h2 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Tu recurso de microaprendizaje</h2>
+            <p style="font-size: 16px; color: #555555; line-height: 1.6; margin: 0 0 32px 0;">Ya tienes tu recurso construido. Revísalo una última vez y entrégalo en la actividad de Moodle. Asegúrate de incluir el enlace o archivo correspondiente a tu herramienta.</p>
+            <a href="#" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 48px; border-radius: 50px;">Ir al entregable</a>
+        </div>
+    </section>
+
+</body>
+</html>
