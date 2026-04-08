@@ -6,12 +6,11 @@
     <title>Bloque 2 - Acotación del objetivo</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-<div style="width: 100%; max-width: 1400px; margin: 0 auto; padding: 100px 48px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; box-sizing: border-box; background-color: #ffffff;">
+<body style="width: 100%; max-width: 1400px; margin: 0 auto; padding: 100px 48px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; box-sizing: border-box; background-color: #ffffff;">
 
     <!-- Section 2.1 -->
     <section style="margin-bottom: 100px;">
-        
+
         <!-- Centered Title Layout -->
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
@@ -23,7 +22,7 @@
 
         <!-- Two Columns -->
         <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
-            
+
             <!-- Left Column - Video Placeholder (55%) -->
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <!-- REEMPLAZAR CON IFRAME YOUTUBE 2.1 -->
@@ -61,7 +60,7 @@
 
     <!-- Section 2.2 -->
     <section style="margin-bottom: 100px;">
-        
+
         <!-- Centered Title Layout -->
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
@@ -73,7 +72,7 @@
 
         <!-- Two Columns -->
         <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
-            
+
             <!-- Left Column - Video Placeholder (55%) -->
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <!-- REEMPLAZAR CON IFRAME YOUTUBE 2.2 -->
@@ -106,7 +105,7 @@
 
         <!-- Example Cards Row -->
         <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 40px;">
-            
+
             <!-- Card 1 -->
             <div style="background-color: #ffffff; border-radius: 24px; box-shadow: 0 12px 40px rgba(0,0,0,0.06); padding: 48px 32px; display: flex; flex-direction: column; flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box; border: 1px solid rgba(0,0,0,0.02);">
                 <p style="margin: 0 0 6px 0; font-size: 14px; color: #888888; font-weight: 500;">Herramienta: <strong style="color: #1a1a1a;">Genially</strong></p>
@@ -153,7 +152,7 @@
 
     <!-- Section 2.3 - Action Moment -->
     <section style="margin-bottom: 100px;">
-        
+
         <!-- Centered Header -->
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
@@ -165,7 +164,7 @@
 
         <!-- Three Feature Items -->
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; margin-bottom: 48px;">
-            
+
             <div style="display: flex; align-items: center; gap: 12px;">
                 <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
                 <span style="font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Evalúa tu objetivo y estructura</span>
@@ -190,6 +189,5 @@
 
     </section>
 
-</div>
 </body>
 </html>
