@@ -1,114 +1,116 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque 4 - Plan de implementación</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body style="margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; background-color: #ffffff; color: #333333; line-height: 1.6;">
+<div style="width: 100%; max-width: 1400px; margin: 0 auto; padding: 100px 48px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; box-sizing: border-box; background-color: #ffffff;">
 
-    <!-- Section 4.1 Header -->
-    <section style="padding: 60px 24px; max-width: 1200px; margin: 0 auto;">
-        <div style="text-align: center; margin-bottom: 48px;">
-            <span style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;">4.1</span>
-            <h1 style="font-size: 36px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Plan de implementación</h1>
-            <p style="font-size: 18px; color: #666666; margin: 0; max-width: 700px; margin-left: auto; margin-right: auto;">Diseñarás un plan concreto para usar tu recurso con tus estudiantes.</p>
+    <section style="margin-bottom: 100px;">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
+                <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">4.1</span>
+                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Plan de implementación</h2>
+            </div>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Diseñarás un plan concreto para usar tu recurso con tus estudiantes.</p>
         </div>
 
-        <!-- Two Columns -->
-        <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
-            
-            <!-- Left Column - Video Placeholder (55%) -->
-            <div style="flex: 1 1 55%; min-width: 300px;">
-                <!-- REEMPLAZAR CON IFRAME YOUTUBE 4.1 -->
-                <div style="position: relative; width: 100%; padding-top: 56.25%; background-color: #e5e5e5; border-radius: 8px; overflow: hidden;">
-                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                        <div style="width: 80px; height: 80px; background-color: #AB1E12; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 16px;">
-                            <div style="width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid #ffffff; margin-left: 5px;"></div>
+        <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
+            <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
+                <div style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #fafafa; border-radius: 32px; border: 2px dashed #e5e5e5; overflow: hidden; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div style="width: 80px; height: 80px; background-color: #AB1E12; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; box-shadow: 0 12px 32px rgba(171,30,18,0.3);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style="margin-left: 6px;">
+                                <path d="M8 5.14v13.72a1 1 0 001.5.86l11-6.86a1 1 0 000-1.72l-11-6.86a1 1 0 00-1.5.86z" fill="#ffffff"></path>
+                            </svg>
                         </div>
-                        <p style="font-size: 16px; color: #666666; margin: 0;">El video estará disponible en breve</p>
+                        <p style="margin: 0; font-size: 16px; color: #1a1a1a; font-weight: 600; letter-spacing: -0.01em;">El video estará disponible en breve</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Column - Tu plan (45%) -->
-            <div style="flex: 1 1 40%; min-width: 280px; border-left: 3px solid #AB1E12; padding-left: 32px;">
-                <span style="display: block; font-size: 12px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px;">Tu plan</span>
-                
-                <p style="font-size: 16px; color: #333333; margin: 0 0 12px 0;">¿Con qué grupo lo usarás?</p>
-                <p style="font-size: 16px; color: #333333; margin: 0 0 12px 0;">¿En qué momento del curso?</p>
-                <p style="font-size: 16px; color: #333333; margin: 0 0 24px 0;">¿Cómo sabrás si funcionó?</p>
-                
-                <textarea placeholder="Escribe aquí tu plan de implementación..." style="width: 100%; min-height: 180px; padding: 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #dddddd; border-radius: 8px; resize: vertical; box-sizing: border-box; outline: none;"></textarea>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4.2 -->
-    <section style="padding: 0 24px 60px 24px; max-width: 800px; margin: 0 auto;">
-        <!-- Horizontal Divider -->
-        <hr style="border: none; border-top: 1px solid #dddddd; margin: 0 0 60px 0;">
-        
-        <!-- Section Header -->
-        <div style="text-align: center; margin-bottom: 40px;">
-            <span style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;">4.2</span>
-            <h2 style="font-size: 32px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Reflexión y cierre</h2>
-            <p style="font-size: 18px; color: #666666; margin: 0;">Un momento para mirar atrás y reconocer lo que construiste.</p>
-        </div>
-
-        <!-- Video Placeholder -->
-        <!-- REEMPLAZAR CON IFRAME YOUTUBE 4.2 -->
-        <div style="position: relative; width: 100%; padding-top: 56.25%; background-color: #e5e5e5; border-radius: 8px; overflow: hidden; margin-bottom: 40px;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                <div style="width: 80px; height: 80px; background-color: #AB1E12; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin-bottom: 16px;">
-                    <div style="width: 0; height: 0; border-top: 15px solid transparent; border-bottom: 15px solid transparent; border-left: 25px solid #ffffff; margin-left: 5px;"></div>
+            <div style="flex: 1 1 calc(45% - 64px); min-width: 320px; display: flex;">
+                <div style="background-color: #ffffff; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); padding: 48px; border: 1px solid rgba(0,0,0,0.02); width: 100%; display: flex; flex-direction: column;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                        <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
+                        <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">Tu plan</span>
+                    </div>
+                    <p style="margin: 0 0 12px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Con qué grupo lo usarás?</p>
+                    <p style="margin: 0 0 12px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿En qué momento del curso?</p>
+                    <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Cómo sabrás si funcionó?</p>
+                    <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe aquí tu plan de implementación..."></textarea>
                 </div>
-                <p style="font-size: 16px; color: #666666; margin: 0;">El video estará disponible en breve</p>
             </div>
         </div>
+    </section>
 
-        <!-- Reflection Question -->
-        <div>
-            <span style="display: block; font-size: 12px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">Una última pregunta</span>
-            <p style="font-size: 20px; color: #333333; margin: 0 0 24px 0; line-height: 1.5;">¿Qué cambiaría en tu forma de diseñar experiencias de aprendizaje después de este curso? Escríbelo con honestidad — no hay respuesta correcta.</p>
-            <textarea placeholder="Escribe tu reflexión aquí..." style="width: 100%; min-height: 180px; padding: 16px; font-family: 'Montserrat', sans-serif; font-size: 15px; border: 1px solid #dddddd; border-radius: 8px; resize: vertical; box-sizing: border-box; outline: none;"></textarea>
+    <div style="height: 1px; width: 100%; max-width: 1000px; margin: 100px auto; background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 80%, transparent 100%);"></div>
+
+    <section style="margin-bottom: 100px;">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
+                <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">4.2</span>
+                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Reflexión y cierre</h2>
+            </div>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Un momento para mirar atrás y reconocer lo que construiste.</p>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
+            <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
+                <div style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #fafafa; border-radius: 32px; border: 2px dashed #e5e5e5; overflow: hidden; height: 100%;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <div style="width: 80px; height: 80px; background-color: #AB1E12; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; box-shadow: 0 12px 32px rgba(171,30,18,0.3);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" style="margin-left: 6px;">
+                                <path d="M8 5.14v13.72a1 1 0 001.5.86l11-6.86a1 1 0 000-1.72l-11-6.86a1 1 0 00-1.5.86z" fill="#ffffff"></path>
+                            </svg>
+                        </div>
+                        <p style="margin: 0; font-size: 16px; color: #1a1a1a; font-weight: 600; letter-spacing: -0.01em;">El video estará disponible en breve</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="flex: 1 1 calc(45% - 64px); min-width: 320px; display: flex;">
+                <div style="background-color: #ffffff; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); padding: 48px; border: 1px solid rgba(0,0,0,0.02); width: 100%; display: flex; flex-direction: column;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                        <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
+                        <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">Una última pregunta</span>
+                    </div>
+                    <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Qué cambiaría en tu forma de diseñar experiencias de aprendizaje después de este curso? Escríbelo con honestidad — no hay respuesta correcta.</p>
+                    <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe tu reflexión aquí..."></textarea>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Entregable Section -->
-    <section style="background-color: #f7f6f4; padding: 48px 24px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <span style="display: inline-block; font-size: 12px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">ENTREGABLE 4</span>
-            <h2 style="font-size: 28px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Tu plan de implementación</h2>
-            <p style="font-size: 16px; color: #666666; margin: 0 0 32px 0;">Escribe tu plan y entrégalo en la actividad de Moodle.</p>
-            <a href="#" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 48px; border-radius: 50px;">Ir al entregable</a>
+    <div style="height: 1px; width: 100%; max-width: 1000px; margin: 100px auto; background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 80%, transparent 100%);"></div>
+
+    <section style="margin-bottom: 100px;">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px;">
+                <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
+                <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">ENTREGABLE 4</span>
+            </div>
+            <h2 style="margin: 0 0 16px 0; font-size: 32px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Tu plan de implementación</h2>
+            <p style="margin: 0 auto 32px auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Escribe tu plan y entrégalo en la actividad de Moodle.</p>
+            <a href="#" style="display: inline-block; padding: 16px 32px; background-color: #AB1E12; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 50px; transition: background-color 0.2s; box-shadow: 0 8px 24px rgba(171,30,18,0.2);">Ir al entregable</a>
         </div>
     </section>
 
-    <!-- Antes de terminar Section -->
-    <section style="padding: 0 24px;">
-        <hr style="border: none; border-top: 1px solid #dddddd; margin: 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
-    </section>
-    <section style="background-color: #f7f6f4; padding: 48px 24px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <span style="display: inline-block; font-size: 12px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px;">ANTES DE TERMINAR</span>
-            <h2 style="font-size: 28px; font-weight: 700; color: #1a1a1a; margin: 0 0 16px 0;">Post-test del curso</h2>
-            <p style="font-size: 16px; color: #666666; margin: 0 0 32px 0;">Es anónimo y toma menos de 5 minutos. Tu respuesta nos ayuda a mejorar el curso para futuros participantes.</p>
-            <a href="#" target="_blank" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 48px; border-radius: 50px;">Responder post-test</a>
+    <div style="height: 1px; width: 100%; max-width: 1000px; margin: 100px auto; background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 80%, transparent 100%);"></div>
+
+    <section style="margin-bottom: 100px;">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 20px;">
+                <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
+                <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">ANTES DE TERMINAR</span>
+            </div>
+            <h2 style="margin: 0 0 16px 0; font-size: 32px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Post-test del curso</h2>
+            <p style="margin: 0 auto 32px auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Es anónimo y toma menos de 5 minutos. Tu respuesta nos ayuda a mejorar el curso para futuros participantes.</p>
+            <a href="#" target="_blank" style="display: inline-block; padding: 16px 32px; background-color: #AB1E12; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 50px; transition: background-color 0.2s; box-shadow: 0 8px 24px rgba(171,30,18,0.2);">Responder post-test</a>
         </div>
     </section>
 
-    <!-- Cierre Section -->
-    <section style="padding: 0 24px;">
-        <hr style="border: none; border-top: 1px solid #dddddd; margin: 0; max-width: 1200px; margin-left: auto; margin-right: auto;">
-    </section>
-    <section style="background-color: #ffffff; padding: 80px 48px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h2 style="font-size: 36px; font-weight: 700; color: #1a1a1a; margin: 0 0 24px 0;">Gracias por llegar hasta aquí.</h2>
-            <p style="font-size: 18px; color: #666666; margin: 0; line-height: 1.7;">Diseñaste, produjiste y reflexionaste. Eso es exactamente lo que le pedimos a quienes aprenden con nosotros.</p>
+    <div style="height: 1px; width: 100%; max-width: 1000px; margin: 100px auto; background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 80%, transparent 100%);"></div>
+
+    <section>
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <h2 style="margin: 0 0 24px 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Gracias por llegar hasta aquí.</h2>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Diseñaste, produjiste y reflexionaste. Eso es exactamente lo que le pedimos a quienes aprenden con nosotros.</p>
         </div>
     </section>
 
-</body>
-</html>
+</div>
