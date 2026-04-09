@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagnóstico: ¿Cuál herramienta es para ti?</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F0E8;
+    --ink: #1A1814;
+    --muted: #6B6560;
+    --way-color: #2D5A4E;
+    --way-light: #E8F2EF;
+    --way-accent: #4A9B84;
+    --nb-color: #1E3A5F;
+    --nb-light: #E8EEF5;
+    --nb-accent: #4A7AB5;
+    --card-bg: #FFFDF7;
+    --border: #DDD8CC;
+    --radius: 16px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px 80px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease forwards;
+  }
+  .header-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+  }
+  .header h1 {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(28px, 5vw, 46px);
+    font-weight: 300;
+    line-height: 1.15;
+    max-width: 600px;
+    margin: 0 auto 12px;
+  }
+  .header h1 em { font-style: italic; font-weight: 400; }
+  .header p {
+    color: var(--muted);
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .progress-wrap {
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: 32px;
+    opacity: 0;
+    animation: fadeUp 0.7s ease 0.15s forwards;
+  }
+  .progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .progress-bar-bg {
+    width: 100%;
+    height: 3px;
+    background: var(--border);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--ink);
+    border-radius: 100px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 640px;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.25s forwards;
+  }
+  .question-number {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .question-text {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 300;
+    line-height: 1.35;
+    margin-bottom: 28px;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+  .option {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    background: transparent;
+    text-align: left;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    transition: all 0.2s ease;
+  }
+  .option:hover { border-color: var(--ink); background: rgba(26,24,20,0.03); }
+  .option.selected { border-color: var(--ink); background: var(--ink); color: var(--bg); }
+  .option-letter {
+    flex-shrink: 0;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    border: 1.5px solid currentColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0.5;
+    margin-top: 1px;
+    transition: opacity 0.2s;
+  }
+  .option.selected .option-letter { opacity: 1; }
+  .option-text { font-size: 14px; line-height: 1.55; }
+  .option.selected .option-text { font-weight: 500; }
+
+  .nav-row { display: flex; justify-content: flex-end; }
+  .btn-next {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--ink);
+    color: var(--bg);
+    border: none;
+    border-radius: 100px;
+    padding: 14px 28px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .btn-next.visible { opacity: 1; pointer-events: all; }
+  .btn-next:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(26,24,20,0.2); }
+  .btn-next:hover svg { transform: translateX(3px); }
+  .btn-next svg { transition: transform 0.2s ease; }
+
+  .result-wrap {
+    width: 100%;
+    max-width: 640px;
+    display: none;
+  }
+  .result-wrap.visible {
+    display: block;
+    animation: fadeUp 0.7s ease forwards;
+  }
+
+  .result-card {
+    border-radius: var(--radius);
+    padding: 48px 40px;
+    border: 1px solid transparent;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .result-card.wayground { background: var(--way-light); border-color: var(--way-accent); }
+  .result-card.notebooklm { background: var(--nb-light); border-color: var(--nb-accent); }
+  .result-card::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    opacity: 0.08;
+  }
+  .result-card.wayground::before { background: var(--way-color); }
+  .result-card.notebooklm::before { background: var(--nb-color); }
+  .result-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .result-card.wayground .result-label { color: var(--way-color); }
+  .result-card.notebooklm .result-label { color: var(--nb-color); }
+  .result-tool {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(36px, 8vw, 56px);
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .result-card.wayground .result-tool { color: var(--way-color); }
+  .result-card.notebooklm .result-tool { color: var(--nb-color); }
+  .result-divider {
+    width: 40px; height: 2px;
+    margin: 24px auto;
+    border-radius: 100px;
+  }
+  .result-card.wayground .result-divider { background: var(--way-accent); }
+  .result-card.notebooklm .result-divider { background: var(--nb-accent); }
+  .result-msg {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--muted);
+    max-width: 420px;
+    margin: 0 auto;
+    font-weight: 300;
+  }
+  .result-footnote {
+    margin-top: 28px;
+    font-size: 12px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  /* ── TIE SCREEN ── */
+  .tie-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 40px;
+    text-align: center;
+  }
+  .tie-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .tie-title {
+    font-family: 'Fraunces', serif;
+    font-size: clamp(20px, 4vw, 28px);
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .tie-sub {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 300;
+    line-height: 1.6;
+    max-width: 420px;
+    margin: 0 auto 28px;
+  }
+  .tie-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  .tie-col {
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .tie-col.way { background: var(--way-light); }
+  .tie-col.nb  { background: var(--nb-light); }
+  .tie-col-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .tie-col.way .tie-col-title { color: var(--way-color); }
+  .tie-col.nb  .tie-col-title { color: var(--nb-color); }
+  .tie-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .tie-col ul li {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--ink);
+    font-weight: 300;
+    padding-left: 14px;
+    position: relative;
+  }
+  .tie-col ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: var(--muted);
+  }
+  .tie-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .tie-btn {
+    padding: 18px 12px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    line-height: 1.5;
+  }
+  .tie-btn strong { display: block; font-size: 16px; font-weight: 600; margin-top: 4px; }
+  .tie-btn.way { background: var(--way-light); border-color: var(--way-accent); color: var(--way-color); }
+  .tie-btn.nb  { background: var(--nb-light);  border-color: var(--nb-accent);  color: var(--nb-color); }
+  .tie-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .card.exiting { animation: slideOut 0.27s ease forwards; }
+  .card.entering { animation: slideIn 0.35s ease forwards; }
+  @keyframes slideOut {
+    from { opacity: 1; transform: translateY(0); }
+    to   { opacity: 0; transform: translateY(-12px); }
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  @media (max-width: 500px) {
+    .card, .tie-card { padding: 28px 20px; }
+    .result-card { padding: 36px 24px; }
+    .tie-summary, .tie-buttons { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-tag">Bloque 1 · Diagnóstico inicial</div>
+  <h1>¿Qué herramienta es <em>la tuya</em>?</h1>
+  <p>Responde con honestidad — no hay respuestas correctas. Estas seis preguntas están pensadas para conocer tu contexto y lo que quieres lograr, no para evaluarte. Al final te sugeriremos una herramienta con la que podrás construir tu recurso de microaprendizaje.</p>
+</div>
+
+<div class="progress-wrap">
+  <div class="progress-info">
+    <span id="progressLabel">Pregunta 1 de 6</span>
+    <span id="progressPct">0%</span>
+  </div>
+  <div class="progress-bar-bg">
+    <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+  </div>
+</div>
+
+<div class="card" id="card">
+  <div class="question-number" id="qNum"></div>
+  <div class="question-text" id="qText"></div>
+  <div class="options" id="optionsContainer"></div>
+  <div class="nav-row">
+    <button class="btn-next" id="btnNext" onclick="next()">
+      Continuar
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<!-- EMPATE -->
+<div class="result-wrap" id="tieWrap">
+  <div class="tie-card">
+    <div class="tie-label">Diagnóstico · Empate</div>
+    <div class="tie-title">Tu perfil encaja con las dos herramientas.</div>
+    <div class="tie-sub">Revisamos tus respuestas y hay elementos que apuntan en las dos direcciones. Tú decides con cuál continuar.</div>
+    <div class="tie-summary" id="tieSummary"></div>
+    <div class="tie-buttons">
+      <button class="tie-btn way" onclick="chooseTie('wayground')">
+        Quiero empezar con
+        <strong>Wayground</strong>
+      </button>
+      <button class="tie-btn nb" onclick="chooseTie('notebooklm')">
+        Quiero empezar con
+        <strong>NotebookLM</strong>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- RESULTADO CLARO -->
+<div class="result-wrap" id="resultWrap">
+  <div class="result-card" id="resultCard">
+    <div class="result-label" id="resultLabel"></div>
+    <div class="result-tool" id="resultTool"></div>
+    <div class="result-divider"></div>
+    <div class="result-msg" id="resultMsg"></div>
+    <div class="result-footnote">En el Bloque 3 la conocerás a fondo.</div>
+  </div>
+</div>
+
+<script>
+const questions = [
+  {
+    text: "¿Desde dónde partes para crear este recurso?",
+    options: [
+      { letter: "A", text: "Tengo material que ya uso con mis estudiantes: lecturas, presentaciones, apuntes, PDFs.", way: 0, nb: 2,
+        tieWay: null, tieNB: "Ya tienes material y quieres transformarlo" },
+      { letter: "B", text: "No tengo material estructurado, pero tengo claro qué quiero que aprendan.", way: 2, nb: 0,
+        tieWay: "Partes de una idea nueva, sin material previo", tieNB: null }
+    ]
+  },
+  {
+    text: "¿Qué quieres que logre tu estudiante con este recurso?",
+    options: [
+      { letter: "A", text: "Que practique o demuestre algo: responder, aplicar, resolver, decidir.", way: 2, nb: 0,
+        tieWay: "Quieres que cada paso sea interactivo", tieNB: null },
+      { letter: "B", text: "Que comprenda algo que le resulta difícil: un concepto, un proceso, una lectura compleja.", way: 0, nb: 2,
+        tieWay: null, tieNB: "El reto es que tus estudiantes entiendan algo denso o complejo" },
+      { letter: "C", text: "Que repase o consolide algo que ya trabajaron en clase.", way: 1, nb: 1,
+        tieWay: "Buscas una actividad con retroalimentación integrada", tieNB: "La interactividad puede venir al final" }
+    ]
+  },
+  {
+    text: "Si pudieras ver tu recurso terminado, ¿a qué se parece más?",
+    options: [
+      { letter: "A", text: "Una actividad donde el estudiante avanza respondiendo o eligiendo, y recibe retroalimentación en el camino.", way: 1, nb: 0,
+        tieWay: "Buscas una actividad con retroalimentación integrada", tieNB: null },
+      { letter: "B", text: "Un material que el estudiante escucha, lee o ve para entender algo con más claridad.", way: 0, nb: 1,
+        tieWay: null, tieNB: "El reto es que tus estudiantes entiendan algo denso o complejo" },
+      { letter: "C", text: "Primero entiende, después practica.", way: 1, nb: 1,
+        tieWay: "Buscas una actividad con retroalimentación integrada", tieNB: "La interactividad puede venir al final" }
+    ]
+  },
+  {
+    text: "¿Cuándo es más importante que tu estudiante interactúe?",
+    options: [
+      { letter: "A", text: "Durante todo el recorrido: cada paso es activo.", way: 2, nb: 0,
+        tieWay: "Quieres que cada paso sea interactivo", tieNB: null },
+      { letter: "B", text: "Al final: primero recibe el contenido, después demuestra lo que entendió.", way: 0, nb: 2,
+        tieWay: null, tieNB: "La interactividad puede venir al final" },
+      { letter: "C", text: "No lo tengo claro todavía.", way: 0, nb: 0,
+        tieWay: null, tieNB: null }
+    ]
+  },
+  {
+    text: "¿Cómo acceden tus estudiantes al material fuera del aula?",
+    options: [
+      { letter: "A", text: "Principalmente desde el celular.", way: 1, nb: 0,
+        tieWay: "Tus estudiantes acceden principalmente desde celular", tieNB: null },
+      { letter: "B", text: "Desde computadora o laptop.", way: 0, nb: 1,
+        tieWay: null, tieNB: "Tus estudiantes trabajan desde computadora" },
+      { letter: "C", text: "Es variable o no lo sé con certeza.", way: 0, nb: 0,
+        tieWay: null, tieNB: null }
+    ]
+  },
+  {
+    text: "¿Cómo van a usar este recurso?",
+    options: [
+      { letter: "A", text: "De forma autónoma, sin mi acompañamiento directo.", way: 1, nb: 0,
+        tieWay: "El recurso lo usarán de forma autónoma", tieNB: null },
+      { letter: "B", text: "Como parte de una actividad de clase, con mi guía o contexto previo.", way: 0, nb: 1,
+        tieWay: null, tieNB: "Vas a acompañar el uso del recurso en clase" },
+      { letter: "C", text: "Ambas son posibles.", way: 0, nb: 0,
+        tieWay: null, tieNB: null }
+    ]
+  }
+];
+
+let current = 0;
+let selected = null;
+let scoreWay = 0;
+let scoreNB  = 0;
+let answers  = [];
+
+function render() {
+  const q = questions[current];
+  const label = `Pregunta ${current + 1} de ${questions.length}`;
+  document.getElementById('qNum').textContent = label;
+  document.getElementById('progressLabel').textContent = label;
+  const pct = Math.round((current / questions.length) * 100);
+  document.getElementById('progressPct').textContent = pct + '%';
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('qText').textContent = q.text;
+
+  const container = document.getElementById('optionsContainer');
+  container.innerHTML = '';
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.innerHTML = `<span class="option-letter">${opt.letter}</span><span class="option-text">${opt.text}</span>`;
+    btn.onclick = () => selectOption(i);
+    container.appendChild(btn);
+  });
+
+  selected = null;
+  document.getElementById('btnNext').classList.remove('visible');
+}
+
+function selectOption(i) {
+  selected = i;
+  document.querySelectorAll('.option').forEach((b, idx) => b.classList.toggle('selected', idx === i));
+  document.getElementById('btnNext').classList.add('visible');
+}
+
+function next() {
+  if (selected === null) return;
+  const opt = questions[current].options[selected];
+  scoreWay += opt.way;
+  scoreNB  += opt.nb;
+  answers.push(opt);
+
+  if (current < questions.length - 1) {
+    const card = document.getElementById('card');
+    card.classList.add('exiting');
+    setTimeout(() => {
+      current++;
+      render();
+      card.classList.remove('exiting');
+      card.classList.add('entering');
+      setTimeout(() => card.classList.remove('entering'), 380);
+    }, 260);
+  } else {
+    finalize();
+  }
+}
+
+function finalize() {
+  document.getElementById('progressPct').textContent = '100%';
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressLabel').textContent = 'Completado';
+
+  const card = document.getElementById('card');
+  card.classList.add('exiting');
+  setTimeout(() => {
+    card.style.display = 'none';
+    if (scoreWay === scoreNB) {
+      buildTie();
+      document.getElementById('tieWrap').classList.add('visible');
+    } else {
+      showWinner(scoreWay > scoreNB ? 'wayground' : 'notebooklm');
+    }
+  }, 260);
+}
+
+function buildTie() {
+  const wayItems = answers.filter(o => o.tieWay).map(o => o.tieWay);
+  const nbItems  = answers.filter(o => o.tieNB).map(o => o.tieNB);
+
+  const wayHTML = wayItems.length
+    ? wayItems.map(t => `<li>${t}</li>`).join('')
+    : '<li>Tus respuestas no muestran señales claras hacia Wayground</li>';
+  const nbHTML = nbItems.length
+    ? nbItems.map(t => `<li>${t}</li>`).join('')
+    : '<li>Tus respuestas no muestran señales claras hacia NotebookLM</li>';
+
+  document.getElementById('tieSummary').innerHTML = `
+    <div class="tie-col way">
+      <div class="tie-col-title">Wayground si…</div>
+      <ul>${wayHTML}</ul>
+    </div>
+    <div class="tie-col nb">
+      <div class="tie-col-title">NotebookLM si…</div>
+      <ul>${nbHTML}</ul>
+    </div>
+  `;
+}
+
+function chooseTie(tool) {
+  document.getElementById('tieWrap').classList.remove('visible');
+  document.getElementById('tieWrap').style.display = 'none';
+  showWinner(tool);
+}
+
+function showWinner(tool) {
+  const card  = document.getElementById('resultCard');
+  const tool_ = document.getElementById('resultTool');
+  const msg   = document.getElementById('resultMsg');
+  const lbl   = document.getElementById('resultLabel');
+
+  lbl.textContent = 'Tu herramienta recomendada es';
+
+  if (tool === 'wayground') {
+    card.className = 'result-card wayground';
+    tool_.textContent = 'Wayground';
+    msg.textContent = 'Wayground está pensada para crear experiencias donde el estudiante aprende haciendo. En el Bloque 3 la conocerás a fondo.';
+  } else {
+    card.className = 'result-card notebooklm';
+    tool_.textContent = 'NotebookLM';
+    msg.textContent = 'NotebookLM está pensada para transformar material que ya tienes en contenido claro y accesible para tus estudiantes. En el Bloque 3 la conocerás a fondo.';
+  }
+
+  document.getElementById('resultWrap').classList.add('visible');
+}
+
+render();
+</script>
+</body>
+</html>
