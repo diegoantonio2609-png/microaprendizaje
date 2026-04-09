@@ -77,10 +77,10 @@
 
         <div style="width: 100%; margin-bottom: 32px;">
             <div style="background-color: #fafafa; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); width: 100%; overflow: hidden; display: flex; flex-direction: column; align-items: center;">
-                <iframe src="diagnostico" style="width: 100%; min-height: 800px; border: none;" allow="autoplay; fullscreen"></iframe>
+                <iframe src="https://diegoantonio2609-png.github.io/microaprendizaje/diagnostico.html" style="width: 100%; min-height: 800px; border: none;" allow="autoplay; fullscreen"></iframe>
             </div>
             <div style="text-align: right; margin-top: 16px;">
-                <a href="diagnostico" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #4a4a4a; font-size: 14px; font-weight: 600; text-decoration: none; transition: color 0.2s; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
+                <a href="https://diegoantonio2609-png.github.io/microaprendizaje/diagnostico.html" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #4a4a4a; font-size: 14px; font-weight: 600; text-decoration: none; transition: color 0.2s; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
                     Abrir en pantalla completa
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
