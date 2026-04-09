@@ -75,21 +75,24 @@
             <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Responde este breve diagnóstico y, con base en tus respuestas, te sugeriremos una herramienta con la que vas a trabajar los siguientes bloques.</p>
         </div>
 
-        <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
-            <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
-                <div style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #fafafa; border-radius: 32px; border: 2px dashed #e5e5e5; overflow: hidden; height: 100%;">
-                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <div style="width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; opacity: 0.3;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                                <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                        <p style="margin: 0; font-size: 16px; color: #1a1a1a; font-weight: 600; letter-spacing: -0.01em; opacity: 0.5;">Diagnóstico interactivo — próximamente</p>
-                    </div>
-                </div>
+        <div style="width: 100%; margin-bottom: 32px;">
+            <div style="background-color: #fafafa; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); width: 100%; overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+                <iframe src="diagnostico" style="width: 100%; min-height: 800px; border: none;" allow="autoplay; fullscreen"></iframe>
             </div>
+            <div style="text-align: right; margin-top: 16px;">
+                <a href="diagnostico" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #4a4a4a; font-size: 14px; font-weight: 600; text-decoration: none; transition: color 0.2s; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
+                    Abrir en pantalla completa
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
 
-            <div style="flex: 1 1 calc(45% - 64px); min-width: 320px; display: flex;">
+        <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch; margin-top: 64px;">
+            <div style="flex: 1 1 100%; min-width: 320px; display: flex;">
                 <div style="background-color: #ffffff; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); padding: 48px; border: 1px solid rgba(0,0,0,0.02); width: 100%; display: flex; flex-direction: column; justify-content: center;">
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
                         <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
