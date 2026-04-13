@@ -208,6 +208,153 @@ custom_theme = gr.themes.Soft(
     color_accent="#AB1E12",
 )
 
+# ── CSS para FORZAR tema claro (incluso dentro de iframe) ─────────────────────
+FORCE_LIGHT_CSS = """
+/* ═══════════════════════════════════════════════════════════════
+   FORZAR TEMA CLARO — sobreescribe el modo oscuro de Gradio
+   cuando la app se carga en un iframe y el SO del usuario
+   tiene dark mode activado.
+   ═══════════════════════════════════════════════════════════════ */
+/* 1. Sobreescribir las CSS variables de Gradio en modo oscuro */
+.dark, :root.dark, html.dark {
+    --body-background-fill: #ffffff !important;
+    --body-text-color: #1a1a1a !important;
+    --body-text-color-subdued: #4a4a4a !important;
+    --background-fill-primary: #ffffff !important;
+    --background-fill-secondary: #fafafa !important;
+    --block-background-fill: #ffffff !important;
+    --block-border-color: rgba(0,0,0,0.02) !important;
+    --border-color-primary: rgba(0,0,0,0.02) !important;
+    --input-background-fill: #fafafa !important;
+    --input-border-color: #e5e5e5 !important;
+    --panel-background-fill: #ffffff !important;
+    --color-accent: #AB1E12 !important;
+    --button-primary-background-fill: #AB1E12 !important;
+    --button-primary-background-fill-hover: #89180e !important;
+    --button-primary-text-color: #ffffff !important;
+    --button-primary-border-color: #AB1E12 !important;
+    --block-shadow: 0 20px 60px rgba(0,0,0,0.05) !important;
+    --neutral-50: #fafafa !important;
+    --neutral-100: #f5f5f5 !important;
+    --neutral-200: #e5e5e5 !important;
+    --neutral-300: #d4d4d4 !important;
+    --neutral-400: #a3a3a3 !important;
+    --neutral-500: #737373 !important;
+    --neutral-600: #525252 !important;
+    --neutral-700: #404040 !important;
+    --neutral-800: #262626 !important;
+    --neutral-900: #171717 !important;
+    --neutral-950: #0a0a0a !important;
+    --shadow-drop: rgba(0,0,0,0.05) !important;
+    --shadow-drop-lg: 0 20px 60px rgba(0,0,0,0.05) !important;
+    --chatbot-body-background-fill: #ffffff !important;
+    --checkbox-background-color: #ffffff !important;
+    --color-accent-soft: rgba(171,30,18,0.08) !important;
+    --table-border-color: #e5e5e5 !important;
+    --table-even-background-fill: #fafafa !important;
+    --table-odd-background-fill: #ffffff !important;
+    --table-row-focus: rgba(171,30,18,0.05) !important;
+    color-scheme: light !important;
+}
+/* 2. Forzar fondos y texto en elementos principales */
+.dark body,
+.dark .gradio-container,
+.dark .main,
+.dark .wrap,
+.dark .contain {
+    background-color: #ffffff !important;
+    color: #1a1a1a !important;
+}
+/* 3. Chatbot — burbujas y fondo */
+.dark .chatbot,
+.dark .chatbot .messages-wrapper,
+.dark .chatbot .message-wrap {
+    background-color: #ffffff !important;
+}
+.dark .chatbot .message.bot,
+.dark .chatbot .message.user {
+    color: #1a1a1a !important;
+}
+.dark .chatbot .message.bot .message-content,
+.dark .chatbot .bot .message-bubble-border {
+    background-color: #fafafa !important;
+    border-color: rgba(0,0,0,0.02) !important;
+    color: #1a1a1a !important;
+}
+.dark .chatbot .message.user .message-content,
+.dark .chatbot .user .message-bubble-border {
+    background-color: #AB1E12 !important;
+    color: #ffffff !important;
+}
+/* 4. Input / Textbox */
+.dark textarea,
+.dark input[type="text"],
+.dark .textbox {
+    background-color: #fafafa !important;
+    color: #1a1a1a !important;
+    border-color: #e5e5e5 !important;
+}
+/* 5. Botones */
+.dark .primary,
+.dark button.primary {
+    background-color: #AB1E12 !important;
+    color: #ffffff !important;
+    border-color: #AB1E12 !important;
+}
+/* 6. Iconos y SVGs dentro del chatbot */
+.dark .chatbot svg,
+.dark .chatbot button {
+    color: #4a4a4a !important;
+    fill: #4a4a4a !important;
+}
+/* 7. Footer y otros elementos de texto */
+.dark footer,
+.dark .footer,
+.dark p,
+.dark span,
+.dark h1,
+.dark h2,
+.dark h3 {
+    color: inherit !important;
+}
+/* 8. Scrollbar para que no se vea oscuro */
+.dark ::-webkit-scrollbar-track {
+    background: #f5f5f5 !important;
+}
+.dark ::-webkit-scrollbar-thumb {
+    background: #d4d4d4 !important;
+}
+"""
+
+# ── JS para forzar tema claro ────────────────────────────────────────────────
+FORCE_LIGHT_JS = """
+() => {
+    // Remover clase dark inmediatamente
+    document.documentElement.classList.remove('dark');
+    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentElement.style.colorScheme = 'light';
+    // Observar cambios por si Gradio la vuelve a agregar
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                }
+            }
+        }
+    });
+    observer.observe(document.documentElement, { attributes: true });
+    // Forzar meta color-scheme
+    let meta = document.querySelector('meta[name="color-scheme"]');
+    if (!meta) {
+        meta = document.createElement('meta');
+        meta.name = 'color-scheme';
+        document.head.appendChild(meta);
+    }
+    meta.content = 'light';
+}
+"""
+
 # ── Componentes ───────────────────────────────────────────────────────────────
 custom_chatbot = gr.Chatbot(
     value=[{"role": "assistant", "content": WELCOME_MSG}],
@@ -216,7 +363,6 @@ custom_chatbot = gr.Chatbot(
     avatar_images=(None, None),
 )
 
-# submit_btn se pasa directamente al Textbox en Gradio 6
 custom_textbox = gr.Textbox(
     placeholder="Escribe aquí tu respuesta y presiona Enter o el botón Enviar →",
     show_label=False,
@@ -228,7 +374,11 @@ custom_textbox = gr.Textbox(
 )
 
 # ── Interfaz ──────────────────────────────────────────────────────────────────
-with gr.Blocks(title="Asistente de Retroalimentación Pedagógica") as demo:
+with gr.Blocks(
+    title="Asistente de Retroalimentación Pedagógica",
+    css=FORCE_LIGHT_CSS,
+    js=FORCE_LIGHT_JS,
+) as demo:
 
     gr.HTML("""
     <div style="text-align: center; max-width: 900px; margin: 40px auto 32px auto; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
