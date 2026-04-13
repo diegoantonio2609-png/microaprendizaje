@@ -113,6 +113,22 @@
             </div>
             <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Antes de avanzar al bloque de producción, te invitamos a revisar lo que llevas con un asistente de retroalimentación. En él, podrás revisar tu objetivo y estructura y te ofrecerá observaciones para afinar tu diseño.</p>
         </div>
+        <div style="width: 100%; margin-bottom: 32px;">
+            <div style="background-color: #fafafa; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); width: 100%; overflow: hidden; display: flex; flex-direction: column; align-items: center;">
+                <iframe src="https://ditorress-retroalimentacion-docentes.hf.space" style="width: 100%; min-height: 850px; border: none;" allow="autoplay; fullscreen" frameborder="0"></iframe>
+            </div>
+            <div style="text-align: right; margin-top: 16px;">
+                <a href="https://ditorress-retroalimentacion-docentes.hf.space" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #4a4a4a; font-size: 14px; font-weight: 600; text-decoration: none; transition: color 0.2s; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
+                    Abrir en pantalla completa
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
         <div style="text-align: center;">
             <a href="https://diegoantonio2609-png.github.io/microaprendizaje/index.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">Abrir chat de retroalimentación</a>
         </div>
