@@ -1,35 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque 2 - Acotación del objetivo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
 <div style="width: 100%; max-width: 1400px; margin: 0 auto; padding: 100px 48px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; color: #1a1a1a; box-sizing: border-box; background-color: #ffffff;">
 
     <!-- Section 2.1 -->
     <section style="margin-bottom: 100px;">
-        
+
         <!-- Centered Title Layout -->
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
                 <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">2.1</span>
-            <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Acotación del objetivo</h2>
+                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Acotación del objetivo</h2>
             </div>
-            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Definirás con precisión qué quieres que aprendan tus estudiantes.</p>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">¿Qué quieres que tus estudiantes logren al terminar la revisión de tu recurso? En esta sección conocerás los elementos a tomar en cuenta para definir tu objetivo.</p>
         </div>
 
         <!-- Two Columns -->
         <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
-            
+
             <!-- Left Column - Video Placeholder (55%) -->
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <!-- REEMPLAZAR CON IFRAME YOUTUBE 2.1 -->
                 <div style="background-color: #fafafa; border-radius: 32px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; min-height: 360px; box-sizing: border-box;">
                     <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;">
-                        <iframe src="https://www.youtube.com/embed/evvZYziV8fA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe src="https://www.youtube.com/embed/LNnquvRXNag" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -37,12 +28,11 @@
             <!-- Right Column - Task Area (45%) -->
             <div style="flex: 1 1 calc(45% - 64px); min-width: 320px; display: flex;">
                 <div style="background-color: #ffffff; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); padding: 48px; border: 1px solid rgba(0,0,0,0.02); width: 100%; display: flex; flex-direction: column;">
-                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
                         <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
                         <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">Tu tarea</span>
                     </div>
-                <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Escribe el objetivo acotado de tu microcontenido (Entregable 1). Usa este formato: <strong>Al finalizar, el estudiante podrá [verbo] [contenido] [condición].</strong></p>
-                <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe tu objetivo aquí..."></textarea>
+                    <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Escribe el objetivo acotado de tu microcontenido. Recuerda utilizar los elementos mencionados en el video: acción concreta, contenido claro y el contexto en que ocurrirá.</p><textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe tu objetivo aquí..."></textarea>
                 </div>
             </div>
 
@@ -54,25 +44,19 @@
 
     <!-- Section 2.2 -->
     <section style="margin-bottom: 100px;">
-        
+
         <!-- Centered Title Layout -->
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
                 <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">2.2</span>
-            <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Estructura G→C→A</h2>
+                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Estructura G→C→A</h2>
             </div>
-            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Diseñarás tu microcontenido con una estructura que va de lo general a lo concreto y termina en acción.</p>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Una vez que tenemos nuestro objetivo, es momento de diseñar cómo lograrán ese objetivo tus estudiantes, para pasar de lo general a lo concreto, y de ahí a la acción.</p>
         </div>
-
-        <!-- Two Columns -->
         <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch;">
-            
-            <!-- Left Column - Video Placeholder (55%) -->
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
-                <!-- REEMPLAZAR CON IFRAME YOUTUBE 2.2 -->
                 <div style="background-color: #fafafa; border-radius: 32px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; min-height: 360px; box-sizing: border-box;">
-                    <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;">
-                        <iframe src="https://www.youtube.com/embed/evvZYziV8fA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                    <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;"><iframe src="https://www.youtube.com/embed/SwNSYEYCi2U" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -82,33 +66,13 @@
                 <div style="background-color: #ffffff; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); padding: 48px; border: 1px solid rgba(0,0,0,0.02); width: 100%; display: flex; flex-direction: column;">
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
                         <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
-                        <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">Observa</span>
+                        <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">antes de tu entregable</span>
                     </div>
-                    <p style="margin: 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Antes de hacer tu entregable, revisa estos dos ejemplos resueltos.</p>
+                    <p style="margin: 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Esta estructura es el corazón de cualquier experiencia de microaprendizaje. Todo lo que construyas a partir de aquí — el recurso, el tutorial, la implementación — parte de estas tres decisiones: cómo abres, qué pones en el centro y qué le pides al estudiante al final.</p>
                 </div>
             </div>
 
         </div>
-
-        <!-- Example Cards Row -->
-        <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-top: 40px;">
-            
-            <!-- Card 1 -->
-            <div style="background-color: #ffffff; border-radius: 24px; box-shadow: 0 12px 40px rgba(0,0,0,0.06); padding: 48px 32px; display: flex; flex-direction: column; flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box; border: 1px solid rgba(0,0,0,0.02);">
-                <p style="margin: 0 0 6px 0; font-size: 14px; color: #888888; font-weight: 500;">Herramienta: <strong style="color: #1a1a1a;">Genially</strong></p>
-                <p style="margin: 0 0 20px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.7;">Fotosíntesis para secundaria</p>
-                <a href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; flex-shrink: 0; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">Ver ejemplo</a>
-            </div>
-
-            <!-- Card 2 -->
-            <div style="background-color: #ffffff; border-radius: 24px; box-shadow: 0 12px 40px rgba(0,0,0,0.06); padding: 48px 32px; display: flex; flex-direction: column; flex: 1 1 calc(50% - 12px); min-width: 280px; box-sizing: border-box; border: 1px solid rgba(0,0,0,0.02);">
-                <p style="margin: 0 0 6px 0; font-size: 14px; color: #888888; font-weight: 500;">Herramienta: <strong style="color: #1a1a1a;">Canva</strong></p>
-                <p style="margin: 0 0 20px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.7;">Gestión del tiempo para adultos</p>
-                <a href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; flex-shrink: 0; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">Ver ejemplo</a>
-            </div>
-
-        </div>
-
     </section>
 
     <!-- Entregable 2 Section -->
@@ -118,12 +82,13 @@
                 <div style="flex: 1; min-width: 300px;">
                     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
                         <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
-                        <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #AB1E12;">Entregable 2</p>
+                        <p style="margin: 0; font-size: 13px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #AB1E12;">Entregables 1 y 2</p>
                     </div>
-                    <h2 style="margin: 0 0 16px 0; font-size: 32px; font-weight: 800; line-height: 1.2; color: #1a1a1a; letter-spacing: -0.02em;">Tu estructura G→C→A</h2>
-                    <p style="margin: 0; font-size: 17px; font-weight: 400; line-height: 1.7; color: #4a4a4a;">Diseña la estructura de tu microcontenido usando el formato G→C→A. Descarga la plantilla, complétala y entrégala en la actividad de Moodle.</p>
+                    <h2 style="margin: 0 0 16px 0; font-size: 32px; font-weight: 800; line-height: 1.2; color: #1a1a1a; letter-spacing: -0.02em;">Objetivo y estructura G→C→A</h2>
+                    <p style="margin: 0; font-size: 17px; font-weight: 400; line-height: 1.7; color: #4a4a4a;">Diseña la estructura de tu microcontenido.&nbsp;</p>
+                    <p style="margin: 0; font-size: 17px; font-weight: 400; line-height: 1.7; color: #4a4a4a;">Descarga la plantilla, complétala y entrégala en la actividad de Moodle.</p>
                 </div>
-                <a href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; flex-shrink: 0; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">
+                <a href="https://cursos.iberoleon.mx/online/mod/assign/view.php?id=1972613" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; flex-shrink: 0; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">
                     Ir al entregable
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14"></path>
@@ -139,43 +104,19 @@
 
     <!-- Section 2.3 - Action Moment -->
     <section style="margin-bottom: 100px;">
-        
+
         <!-- Centered Header -->
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
                 <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">2.3</span>
-            <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Retroalimentación con IA</h2>
+                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Retroalimentación sobre tu diseño</h2>
             </div>
-            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Antes de avanzar, obtén retroalimentación personalizada sobre tu diseño.</p>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Antes de avanzar al bloque de producción, te invitamos a revisar lo que llevas con un asistente de retroalimentación. En él, podrás revisar tu objetivo y estructura y te ofrecerá observaciones para afinar tu diseño.</p>
         </div>
-
-        <!-- Three Feature Items -->
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; margin-bottom: 48px;">
-            
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
-                <span style="font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Evalúa tu objetivo y estructura</span>
-            </div>
-
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
-                <span style="font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Te hace preguntas para profundizar</span>
-            </div>
-
-            <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 8px; height: 8px; background-color: #AB1E12; border-radius: 50%;"></div>
-                <span style="font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Sugiere mejoras concretas</span>
-            </div>
-
-        </div>
-
-        <!-- Prominent CTA Button -->
         <div style="text-align: center;">
-            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">Abrir chat de retroalimentación</a>
+            <a href="https://diegoantonio2609-png.github.io/microaprendizaje/index.html" style="display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 20px 40px; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 700; text-decoration: none; border-radius: 50px; white-space: nowrap; box-shadow: 0 12px 24px rgba(171,30,18,0.25);">Abrir chat de retroalimentación</a>
         </div>
 
     </section>
 
 </div>
-</body>
-</html>
