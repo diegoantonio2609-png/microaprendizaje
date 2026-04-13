@@ -169,7 +169,7 @@ def respond(message, history: list) -> str:
 
     except Exception as e:
         err = str(e).lower()
-        if any(k in err for k in ("quota", "rate", "limit", "429")):
+        if any(k in err for k in ("429", "quota", "resource_exhausted")):
             return "⚠️ Límite de consultas alcanzado hoy. Intenta mañana o en unos minutos."
         return f"⚠️ Error al conectar con Gemini: {e}"
 
