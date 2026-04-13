@@ -174,19 +174,53 @@ def respond(message, history: list) -> str:
         return f"⚠️ Error al conectar con Gemini: {e}"
 
 
-# ── CSS ───────────────────────────────────────────────────────────────────────
-CSS = ""
+# ── Tema Gradio ───────────────────────────────────────────────────────────────
+custom_theme = gr.themes.Soft(
+    font=[gr.themes.GoogleFont("Montserrat"), "Helvetica", "Arial", "sans-serif"],
+    primary_hue="red",
+    neutral_hue="slate",
+    radius_size=gr.themes.sizes.radius_lg,
+    text_size=gr.themes.sizes.text_md,
+).set(
+    body_background_fill="#ffffff",
+    body_text_color="#1a1a1a",
+    body_text_color_subdued="#4a4a4a",
+    background_fill_primary="#ffffff",
+    background_fill_secondary="#fafafa",
+    border_color_primary="rgba(0,0,0,0.02)",
+    block_background_fill="#ffffff",
+    block_border_width="1px",
+    block_border_color="rgba(0,0,0,0.02)",
+    block_radius="32px",
+    block_shadow="0 20px 60px rgba(0,0,0,0.05)",
+    container_radius="32px",
+    input_background_fill="#fafafa",
+    input_border_color="#e5e5e5",
+    input_border_width="1px",
+    input_radius="16px",
+    button_primary_background_fill="#AB1E12",
+    button_primary_background_fill_hover="#89180e",
+    button_primary_text_color="#ffffff",
+    button_primary_border_color="#AB1E12",
+    button_shadow="0 12px 24px rgba(171,30,18,0.25)",
+    button_large_radius="50px",
+    button_small_radius="50px",
+    panel_background_fill="#ffffff",
+    color_accent="#AB1E12",
+)
+
 # ── Componentes ───────────────────────────────────────────────────────────────
 custom_chatbot = gr.Chatbot(
     value=[{"role": "assistant", "content": WELCOME_MSG}],
-    elem_classes=["chatbot-wrap"],
     height=500,
     show_label=False,
+    avatar_images=(None, None),
+    bubble_full_width=False,
 )
 
 # submit_btn se pasa directamente al Textbox en Gradio 6
 custom_textbox = gr.Textbox(
-    placeholder="Escribe aquí y presiona Enter o el botón Enviar →",
+    placeholder="Escribe aquí tu respuesta y presiona Enter o el botón Enviar →",
     show_label=False,
     lines=2,
     max_lines=6,
@@ -196,14 +230,15 @@ custom_textbox = gr.Textbox(
 )
 
 # ── Interfaz ──────────────────────────────────────────────────────────────────
-# gr.ChatInterface gestiona el input/output de forma nativa:
-# el campo de texto SIEMPRE es visible y funcional.
-with gr.Blocks(title="Asistente de Retroalimentación Pedagógica", theme=gr.themes.Soft(primary_hue="indigo", neutral_hue="slate")) as demo:
+with gr.Blocks(title="Asistente de Retroalimentación Pedagógica", theme=custom_theme) as demo:
 
     gr.HTML("""
-    <div class="app-header">
-        <h1>Retroalimentación Pedagógica <span class="accent">·</span> Microaprendizaje</h1>
-        <p>Diseño instruccional — Objetivo · Gancho · Contenido · Acción</p>
+    <div style="text-align: center; max-width: 900px; margin: 40px auto 32px auto; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 16px;">
+            <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">ASISTENTE IA</span>
+            <h1 style="margin: 0; font-size: 32px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Retroalimentación Pedagógica</h1>
+        </div>
+        <p style="margin: 0 auto; font-size: 16px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Diseño instruccional — Objetivo · Gancho · Contenido · Acción</p>
     </div>
     """)
 
@@ -215,16 +250,15 @@ with gr.Blocks(title="Asistente de Retroalimentación Pedagógica", theme=gr.the
         title=None,
     )
 
-    gr.HTML(
-        '<div class="app-footer">'
-        "La conversación no se guarda · Cada sesión es independiente"
-        "</div>"
-    )
+    gr.HTML("""
+    <div style="text-align: center; margin-top: 32px; margin-bottom: 40px; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
+        <p style="margin: 0; font-size: 13px; font-weight: 500; color: #888888;">La conversación no se guarda · Cada sesión es independiente</p>
+    </div>
+    """)
 
 # ── Launch ────────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
         server_port=7860,
-        css=CSS,
     )
