@@ -120,10 +120,8 @@ def respond(message: str, history: list) -> str:
     y devuelve la respuesta como string.
     """
     if not client:
-        return (
-            "⚠️ No se encontró la clave de API. "
-            "Configura GOOGLE_API_KEY en los Secrets del Space."
-        )
+        gr.Warning("⚠️ No se encontró la clave de API. Configura GOOGLE_API_KEY en los Secrets del Space.")
+        return "⚠️ No se encontró la clave de API. Configura GOOGLE_API_KEY en los Secrets del Space."
     try:
         contents = []
         for item in history:
@@ -161,114 +159,7 @@ def respond(message: str, history: list) -> str:
 
 
 # ── CSS ───────────────────────────────────────────────────────────────────────
-CSS = """
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
-:root {
-    --bg:         #0f1117;
-    --surface:    #1a1d27;
-    --accent:     #6c7bff;
-    --accent-dim: #2d3578;
-    --text:       #e8eaf6;
-    --muted:      #8b91c7;
-    --border:     #2e3250;
-    --user-bg:    #1e2340;
-    --r:          12px;
-}
-*, *::before, *::after { box-sizing: border-box; }
-body,
-.gradio-container,
-.gradio-container > .main,
-footer {
-    background: var(--bg) !important;
-}
-* { font-family: 'DM Sans', system-ui, sans-serif !important; }
-/* ── Header ── */
-.app-header {
-    text-align: center;
-    padding: 1.8rem 1rem 0.8rem;
-}
-.app-header h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text);
-    letter-spacing: -0.02em;
-    margin: 0 0 0.25rem;
-}
-.app-header p {
-    color: var(--muted);
-    font-size: 0.86rem;
-    margin: 0;
-}
-.accent { color: var(--accent); }
-/* ── Chatbot ── */
-.chatbot-wrap,
-.chatbot-wrap > div {
-    background: var(--surface) !important;
-}
-.chatbot-wrap {
-    border: 1px solid var(--border) !important;
-    border-radius: var(--r) !important;
-}
-/* Burbujas usuario */
-.message.user > div {
-    background: var(--user-bg) !important;
-    border: 1px solid var(--accent-dim) !important;
-    border-radius: 10px 10px 2px 10px !important;
-    color: var(--text) !important;
-    padding: 0.65rem 0.9rem !important;
-}
-/* Burbujas bot */
-.message.bot > div {
-    background: var(--surface) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: 10px 10px 10px 2px !important;
-    color: var(--text) !important;
-    padding: 0.65rem 0.9rem !important;
-}
-/* Ocultar avatares */
-.avatar-container,
-.message-avatar { display: none !important; }
-/* ── Textbox (input) ── */
-.input-wrap textarea,
-textarea {
-    background: var(--surface) !important;
-    border: 1px solid var(--border) !important;
-    border-radius: var(--r) !important;
-    color: var(--text) !important;
-    font-size: 0.94rem !important;
-    padding: 0.75rem 1rem !important;
-    transition: border-color 0.15s;
-}
-textarea:focus {
-    border-color: var(--accent) !important;
-    outline: none !important;
-    box-shadow: 0 0 0 3px rgba(108,123,255,0.14) !important;
-}
-textarea::placeholder { color: var(--muted) !important; }
-/* ── Botón Enviar ── */
-button.primary,
-button[class*="primary"] {
-    background: var(--accent) !important;
-    border: none !important;
-    border-radius: 8px !important;
-    color: #fff !important;
-    font-weight: 600 !important;
-    transition: opacity 0.15s !important;
-}
-button.primary:hover { opacity: 0.82 !important; }
-/* ── Footer ── */
-.app-footer {
-    text-align: center;
-    padding: 0.5rem;
-    color: var(--muted);
-    font-size: 0.76rem;
-}
-/* ── Scrollbar ── */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
-"""
-
+CSS = ""
 # ── Componentes ───────────────────────────────────────────────────────────────
 custom_chatbot = gr.Chatbot(
     value=[{"role": "assistant", "content": WELCOME_MSG}],
@@ -291,7 +182,7 @@ custom_textbox = gr.Textbox(
 # ── Interfaz ──────────────────────────────────────────────────────────────────
 # gr.ChatInterface gestiona el input/output de forma nativa:
 # el campo de texto SIEMPRE es visible y funcional.
-with gr.Blocks(title="Asistente de Retroalimentación Pedagógica") as demo:
+with gr.Blocks(title="Asistente de Retroalimentación Pedagógica", theme=gr.themes.Soft(primary_hue="indigo", neutral_hue="slate")) as demo:
 
     gr.HTML("""
     <div class="app-header">
