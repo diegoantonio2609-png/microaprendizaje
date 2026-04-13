@@ -228,7 +228,7 @@ custom_textbox = gr.Textbox(
 )
 
 # ── Interfaz ──────────────────────────────────────────────────────────────────
-with gr.Blocks(title="Asistente de Retroalimentación Pedagógica", theme=custom_theme) as demo:
+with gr.Blocks(title="Asistente de Retroalimentación Pedagógica") as demo:
 
     gr.HTML("""
     <div style="text-align: center; max-width: 900px; margin: 40px auto 32px auto; font-family: 'Montserrat', Helvetica, Arial, sans-serif;">
@@ -259,4 +259,6 @@ if __name__ == "__main__":
     demo.launch(
         server_name="0.0.0.0",
         server_port=7860,
+        ssr_mode=False,
+        theme=custom_theme,
     )
