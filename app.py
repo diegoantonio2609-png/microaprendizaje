@@ -180,7 +180,7 @@ custom_theme = gr.themes.Soft(
     primary_hue="red",
     neutral_hue="slate",
     radius_size=gr.themes.sizes.radius_lg,
-    text_size=gr.themes.sizes.text_md,
+    text_size=gr.themes.sizes.text_lg,
 ).set(
     body_background_fill="#ffffff",
     body_text_color="#1a1a1a",
@@ -263,9 +263,35 @@ FORCE_LIGHT_CSS = """
 .dark .gradio-container,
 .dark .main,
 .dark .wrap,
-.dark .contain {
+.dark .contain,
+body,
+.gradio-container,
+.main,
+.wrap,
+.contain {
     background-color: #ffffff !important;
     color: #1a1a1a !important;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
+}
+
+/* Typography homologation */
+.chatbot p,
+.textbox textarea,
+.chatbot .message-content,
+.chatbot .message {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.8 !important;
+    font-weight: 400 !important;
+}
+
+.chatbot .message-wrap {
+    gap: 16px !important;
+}
+
+.chatbot .message.bot .message-content,
+.chatbot .message.user .message-content {
+    padding: 16px 24px !important;
 }
 
 /* 3. Chatbot — burbujas y fondo */
