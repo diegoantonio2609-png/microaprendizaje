@@ -202,7 +202,6 @@ custom_theme = gr.themes.Soft(
     button_primary_background_fill_hover="#89180e",
     button_primary_text_color="#ffffff",
     button_primary_border_color="#AB1E12",
-    button_shadow="0 12px 24px rgba(171,30,18,0.25)",
     button_large_radius="50px",
     button_small_radius="50px",
     panel_background_fill="#ffffff",
@@ -215,7 +214,6 @@ custom_chatbot = gr.Chatbot(
     height=500,
     show_label=False,
     avatar_images=(None, None),
-    bubble_full_width=False,
 )
 
 # submit_btn se pasa directamente al Textbox en Gradio 6
