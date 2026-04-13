@@ -113,7 +113,23 @@ WELCOME_MSG = (
 )
 
 # ── Lógica de respuesta ───────────────────────────────────────────────────────
-def respond(message: str, history: list) -> str:
+def _extract_text(msg) -> str:
+    if isinstance(msg, str):
+        return msg
+    elif isinstance(msg, list):
+        texts = []
+        for part in msg:
+            if isinstance(part, dict) and "text" in part:
+                texts.append(part["text"])
+            elif isinstance(part, str):
+                texts.append(part)
+        return " ".join(texts) if texts else str(msg)
+    elif isinstance(msg, dict):
+        if "text" in msg:
+            return msg["text"]
+    return str(msg)
+
+def respond(message, history: list) -> str:
     """
     Recibe el mensaje del usuario y el historial en formato
     [{"role": "user"|"assistant", "content": str}, ...]
@@ -126,7 +142,7 @@ def respond(message: str, history: list) -> str:
         contents = []
         for item in history:
             role    = item.get("role", "")
-            content = item.get("content", "")
+            content = _extract_text(item.get("content", ""))
             if role == "user":
                 contents.append(
                     types.Content(role="user",  parts=[types.Part(text=content)])
@@ -137,7 +153,7 @@ def respond(message: str, history: list) -> str:
                 )
 
         contents.append(
-            types.Content(role="user", parts=[types.Part(text=message)])
+            types.Content(role="user", parts=[types.Part(text=_extract_text(message))])
         )
 
         response = client.models.generate_content(
