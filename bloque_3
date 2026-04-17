@@ -4,9 +4,9 @@
         <div style="text-align: center; max-width: 900px; margin: 0 auto 64px auto;">
             <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 24px;">
                 <span style="display: inline-block; padding: 6px 16px; background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 700; font-size: 15px; letter-spacing: 0.1em; border-radius: 50px;">3.1</span>
-                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Orientación de ruta</h2>
+                <h2 style="margin: 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Tu herramienta de trabajo</h2>
             </div>
-            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Según tu diagnóstico, esta es la herramienta con la que vas a trabajar. A continuación encontrarás el tutorial diseñado para ti.</p>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Con base a tu diagnóstico, selecciona la herramienta para construir tu recurso de microaprendizaje. Ahí, encontrarás un tutorial diseñado para llevarte de la mano. Si en algún momento decides cambiar o conocer la otra herramienta, los tutoriales estarán disponibles para ti.</p>
         </div>
 
         <div style="display: flex; flex-wrap: wrap; gap: 64px; align-items: stretch; justify-content: center;">
@@ -22,7 +22,6 @@
                 <a href="#" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 14px; font-weight: 600; text-decoration: none; padding: 12px 28px; border-radius: 50px; margin-top: auto;">Continuar con NotebookLM</a>
             </div>
         </div>
-        <p style="text-align: center; font-size: 13px; color: #888888; margin: 32px 0 0 0;">Puedes cambiar de ruta en cualquier momento.</p>
     </section>
 
     <div style="height: 1px; width: 100%; max-width: 1000px; margin: 100px auto; background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 80%, transparent 100%);"></div>
@@ -40,7 +39,7 @@
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <div style="background-color: #fafafa; border-radius: 32px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; min-height: 360px; box-sizing: border-box;">
                     <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;">
-                        <iframe src="https://www.youtube.com/embed/evvZYziV8fA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe src="https://www.youtube.com/embed/CfbZTNOIcUI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -72,7 +71,7 @@
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <div style="background-color: #fafafa; border-radius: 32px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; min-height: 360px; box-sizing: border-box;">
                     <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;">
-                        <iframe src="https://www.youtube.com/embed/evvZYziV8fA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe src="https://www.youtube.com/embed/fl-yK5ttMa4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -98,7 +97,7 @@
             </div>
             <h2 style="margin: 0 0 24px 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Tu recurso de microaprendizaje</h2>
             <p style="margin: 0 auto 48px auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Ya tienes tu recurso construido. Revísalo una última vez y entrégalo en la actividad de Moodle. Asegúrate de incluir el enlace o archivo correspondiente a tu herramienta.</p>
-            <a href="#" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 48px; border-radius: 50px;">Ir al entregable</a>
+            <a href="https://cursos.iberoleon.mx/online/mod/assign/view.php?id=1972681" style="display: inline-block; background-color: #AB1E12; color: #ffffff; font-size: 16px; font-weight: 600; text-decoration: none; padding: 16px 48px; border-radius: 50px;">Ir al entregable</a>
         </div>
     </section>
 
@@ -120,7 +119,7 @@
                 cardNl.style.boxShadow = '0 20px 60px rgba(0,0,0,0.05)';
             }
 
-            if(cardWg) {
+            if (cardWg) {
                 cardWg.addEventListener('click', function(e) {
                     e.preventDefault();
                     resetCards();
@@ -134,12 +133,15 @@
                     cardWg.style.boxShadow = '0 20px 60px rgba(171,30,18,0.1)';
 
                     setTimeout(function() {
-                        secWg.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        secWg.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
                     }, 50);
                 });
             }
 
-            if(cardNl) {
+            if (cardNl) {
                 cardNl.addEventListener('click', function(e) {
                     e.preventDefault();
                     resetCards();
@@ -153,7 +155,10 @@
                     cardNl.style.boxShadow = '0 20px 60px rgba(171,30,18,0.1)';
 
                     setTimeout(function() {
-                        secNl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        secNl.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
                     }, 50);
                 });
             }
