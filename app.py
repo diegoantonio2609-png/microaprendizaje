@@ -215,7 +215,6 @@ FORCE_LIGHT_CSS = """
    cuando la app se carga en un iframe y el SO del usuario
    tiene dark mode activado.
    ═══════════════════════════════════════════════════════════════ */
-
 /* 1. Sobreescribir las CSS variables de Gradio en modo oscuro */
 .dark, :root.dark, html.dark {
     --body-background-fill: #ffffff !important;
@@ -257,7 +256,6 @@ FORCE_LIGHT_CSS = """
     --table-row-focus: rgba(171,30,18,0.05) !important;
     color-scheme: light !important;
 }
-
 /* 2. Forzar fondos y texto en elementos principales */
 .dark body,
 .dark .gradio-container,
@@ -273,7 +271,6 @@ body,
     color: #1a1a1a !important;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif !important;
 }
-
 /* Typography homologation */
 .chatbot p,
 .textbox textarea,
@@ -284,41 +281,34 @@ body,
     line-height: 1.8 !important;
     font-weight: 400 !important;
 }
-
 .chatbot .message-wrap {
     gap: 16px !important;
 }
-
 .chatbot .message.bot .message-content,
 .chatbot .message.user .message-content {
     padding: 16px 24px !important;
 }
-
 /* 3. Chatbot — burbujas y fondo */
 .dark .chatbot,
 .dark .chatbot .messages-wrapper,
 .dark .chatbot .message-wrap {
     background-color: #ffffff !important;
 }
-
 .dark .chatbot .message.bot,
 .dark .chatbot .message.user {
     color: #1a1a1a !important;
 }
-
 .dark .chatbot .message.bot .message-content,
 .dark .chatbot .bot .message-bubble-border {
     background-color: #fafafa !important;
     border-color: rgba(0,0,0,0.02) !important;
     color: #1a1a1a !important;
 }
-
 .dark .chatbot .message.user .message-content,
 .dark .chatbot .user .message-bubble-border {
     background-color: #AB1E12 !important;
     color: #ffffff !important;
 }
-
 /* 4. Input / Textbox */
 .dark textarea,
 .dark input[type="text"],
@@ -327,7 +317,6 @@ body,
     color: #1a1a1a !important;
     border-color: #e5e5e5 !important;
 }
-
 /* 5. Botones */
 .dark .primary,
 .dark button.primary {
@@ -335,14 +324,12 @@ body,
     color: #ffffff !important;
     border-color: #AB1E12 !important;
 }
-
 /* 6. Iconos y SVGs dentro del chatbot */
 .dark .chatbot svg,
 .dark .chatbot button {
     color: #4a4a4a !important;
     fill: #4a4a4a !important;
 }
-
 /* 7. Footer y otros elementos de texto */
 .dark footer,
 .dark .footer,
@@ -353,7 +340,6 @@ body,
 .dark h3 {
     color: inherit !important;
 }
-
 /* 8. Scrollbar para que no se vea oscuro */
 .dark ::-webkit-scrollbar-track {
     background: #f5f5f5 !important;
@@ -361,7 +347,6 @@ body,
 .dark ::-webkit-scrollbar-thumb {
     background: #d4d4d4 !important;
 }
-
 /* 9. Ocultar footer nativo de Gradio ("Construido con Gradio") */
 footer.svelte-1ax1toq,
 footer[class*="svelte-"],
@@ -379,7 +364,6 @@ FORCE_LIGHT_JS = """
     document.documentElement.classList.remove('dark');
     document.documentElement.setAttribute('data-theme', 'light');
     document.documentElement.style.colorScheme = 'light';
-
     // Observar cambios por si Gradio la vuelve a agregar
     const observer = new MutationObserver((mutations) => {
         for (const mutation of mutations) {
@@ -391,7 +375,6 @@ FORCE_LIGHT_JS = """
         }
     });
     observer.observe(document.documentElement, { attributes: true });
-
     // Forzar meta color-scheme
     let meta = document.querySelector('meta[name="color-scheme"]');
     if (!meta) {
