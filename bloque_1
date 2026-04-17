@@ -26,6 +26,7 @@
                     </div>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Recuerdas algún momento en que aprendiste algo de forma rápida y te quedó claro? ¿Qué crees que lo hizo funcionar? Escríbelo en dos o tres líneas.</p>
                     <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe aquí tu reflexión..."></textarea>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu cuaderno de trabajo. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
                 </div>
             </div>
         </div>
@@ -59,6 +60,7 @@
                     </div>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">De los tres fundamentos que acabas de conocer — carga cognitiva, multimedia y estructura instruccional — ¿cuál resuena más con tu forma de aprender? Escríbelo en dos o tres líneas.</p>
                     <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe aquí tu reflexión..."></textarea>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu cuaderno de trabajo. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
                 </div>
             </div>
         </div>

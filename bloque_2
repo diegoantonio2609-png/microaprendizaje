@@ -33,6 +33,7 @@
                         <span style="font-size: 13px; font-weight: 700; color: #AB1E12; text-transform: uppercase; letter-spacing: 0.15em;">Tu tarea</span>
                     </div>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">Escribe el objetivo acotado de tu microcontenido. Recuerda utilizar los elementos mencionados en el video: acción concreta, contenido claro y el contexto en que ocurrirá.</p><textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe tu objetivo aquí..."></textarea>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu cuaderno de trabajo. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
                 </div>
             </div>
 
