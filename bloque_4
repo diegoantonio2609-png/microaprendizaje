@@ -28,7 +28,7 @@
                     <p style="margin: 0 0 12px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿En qué momento del curso?</p>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Cómo sabrás si funcionó?</p>
                     <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe aquí tu plan de implementación..."></textarea>
-                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu cuaderno de trabajo. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu <span style="background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 600; padding: 2px 6px; border-radius: 4px;">cuaderno de trabajo</span>. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                     </div>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Qué cambiaría en tu forma de diseñar experiencias de aprendizaje después de este curso? Escríbelo con en el siguiente espacio — no hay respuesta correcta o incorrecta, solo tu perspectiva y reflexión.</p>
                     <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe tu reflexión aquí..."></textarea>
-                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu cuaderno de trabajo. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu <span style="background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 600; padding: 2px 6px; border-radius: 4px;">cuaderno de trabajo</span>. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
                 </div>
             </div>
         </div>
