@@ -105,4 +105,56 @@
         </div>
     </section>
 
+    <div style="height: 1px; width: 100%; max-width: 1000px; margin: 100px auto; background: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.05) 20%, rgba(0,0,0,0.05) 80%, transparent 100%);"></div>
+
+    <section style="margin-bottom: 100px;">
+        <div style="max-width: 900px; margin: 0 auto; background-color: #fafafa; border-radius: 32px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); overflow: hidden;">
+            <button type="button" id="referencias-toggle" aria-expanded="false" aria-controls="referencias-content" style="display: flex; align-items: center; justify-content: space-between; padding: 32px 48px; background-color: transparent; border: none; width: 100%; text-decoration: none; transition: background-color 0.2s; cursor: pointer;">
+                <div style="display: flex; align-items: center; gap: 16px;">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AB1E12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                    <h2 style="margin: 0; font-size: 24px; font-weight: 700; color: #1a1a1a; letter-spacing: -0.01em;">Referencias Bibliográficas</h2>
+                </div>
+                <div style="width: 40px; height: 40px; border-radius: 50%; background-color: rgba(171,30,18,0.08); display: flex; align-items: center; justify-content: center; transition: transform 0.3s ease;" id="referencias-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#AB1E12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </div>
+            </button>
+
+            <div id="referencias-content" style="max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; padding: 0 48px; background-color: #ffffff;">
+                <div style="padding-top: 24px; padding-bottom: 48px; border-top: 1px solid rgba(0,0,0,0.05);">
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Articulate Community. (2016). Multimedia learning principles for course designers #126. E-Learning Challenges and Recaps. https://community.articulate.com/blog/e-learning-challenges/multimedia-learning-principles-for-course-designers-126/1117945</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Betancur Chicué, V. (2024). El microlearning y la teoría cognitiva del aprendizaje multimedia en el desarrollo de competencias digitales de docentes universitarios [Tesis doctoral, Universidad de Salamanca]. Gredos. https://gredos.usal.es/bitstream/handle/10366/159611/Betancur%20Chicu%c3%a9%2c%20Viviana.pdf</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Cromley, J. G., & Chen, R. (2025). A meta-analysis of Richard Mayer's multimedia learning research: Searching for boundary conditions of design principles across multiple media types. Educational Research Review, 49, 100730. https://doi.org/10.1016/j.edurev.2025.100730</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Digital Learning Institute. (s.f.). Mayer's 12 principles of multimedia learning. https://www.digitallearninginstitute.com/blog/mayers-principles-multimedia-learning</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Durán Alcalá, M., & Escudero Nahón, A. (2023). Microlearning en el entorno educativo. IE Revista de Investigación Educativa de la REDIECH, 14, e1763. https://doi.org/10.33010/ie_rie_rediech.v14i0.1763</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">EdTrainer TV. (2025, 28 de junio). Wayground: The new AI-powered Quizizz | Real impact + step-by-step how-to [Video]. YouTube. https://www.youtube.com/watch?v=fi3OJnt0kjo</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Kittredge, A., Lee, C., & Jiang, X. (2025). Video Call improves Japanese English learners' speaking skills. Duolingo Research Report, DRR-25-06. https://duolingo-papers.s3.amazonaws.com/reports/Duolingo_whitepaper_language_video_call_improves_speaking_2025.pdf</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Latapie Venegas, I. (2007). Acercamiento al aprendizaje multimedia. Investigación Universitaria Multidisciplinaria, 6(6), 7–14.</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Monib, W. K., Qazi, A., & Apong, R. A. (2025). Microlearning beyond boundaries: A systematic review and a novel framework for improving learning outcomes. Heliyon, 11, e41413. https://doi.org/10.1016/j.heliyon.2024.e41413</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Ruiz Díaz Benítez, R. (2023). El micro aprendizaje. Centro de Investigación y Desarrollo (CID). https://doi.org/10.37811/cli_w855</p>
+                    <p style="margin: 0 0 16px 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Torres, Y. (2021, 27 de julio). ¿Cómo diseñar el microlearning para una enseñanza efectiva? [Video]. TEDMED 2021 - Facultad de Ciencias Médicas. https://www.youtube.com/watch?v=43Nyc2Me0Yk</p>
+                    <p style="margin: 0; font-size: 15px; font-weight: 400; color: #4a4a4a; line-height: 1.8; padding-left: 24px; text-indent: -24px;">Zhou, J., & Fang, C. (2024). Examining the impact of fragmented learning on education: Empirical evidence from SOR theory analysis. En S. Zhu et al. (Eds.), Proceedings of the 3rd International Conference on Education, Language and Art (ICELA 2023): Advances in social science, education and humanities research (Vol. 831, pp. 494–506). Atlantis Press. https://doi.org/10.2991/978-2-38476-214-9_60</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('referencias-toggle').addEventListener('click', function() {
+            var content = document.getElementById('referencias-content');
+            var icon = document.getElementById('referencias-icon');
+            var isExpanded = this.getAttribute('aria-expanded') === 'true';
+
+            if (!isExpanded) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+                this.style.backgroundColor = 'rgba(0,0,0,0.02)';
+                this.setAttribute('aria-expanded', 'true');
+            } else {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+                this.style.backgroundColor = 'transparent';
+                this.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
 </div>
