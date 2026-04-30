@@ -13,7 +13,7 @@
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <div style="background-color: #fafafa; border-radius: 32px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; min-height: 360px; box-sizing: border-box;">
                     <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;">
-                        <iframe src="https://www.youtube.com/embed/0G4USWS-tYU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe src="https://www.youtube.com/embed/FAWSofbA-Z0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <p style="margin: 0 0 12px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿En qué momento del curso?</p>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Cómo sabrás si funcionó?</p>
                     <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe aquí tu plan de implementación..."></textarea>
-                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu <span style="background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 600; padding: 2px 6px; border-radius: 4px;">cuaderno de trabajo</span>. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;"><span style="background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 600; padding: 2px 6px; border-radius: 4px;">Este es un espacio temporal de trabajo.</span>&nbsp;Recuerda que al salir o actualizar la página perderás lo que escribas aquí. Guarda tus reflexiones en un lugar seguro antes de continuar.</p>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
             <div style="flex: 1 1 55%; min-width: 320px; display: flex; flex-direction: column;">
                 <div style="background-color: #fafafa; border-radius: 32px; padding: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: center; width: 100%; height: 100%; min-height: 360px; box-sizing: border-box;">
                     <div style="position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.08); background-color: #1a1a1a;">
-                        <iframe src="https://www.youtube.com/embed/bZ_SaiZyHjI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        <iframe src="https://www.youtube.com/embed/n7QMBdOQRpk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                     </div>
                     <p style="margin: 0 0 24px 0; font-size: 17px; font-weight: 400; color: #4a4a4a; line-height: 1.8;">¿Qué cambiaría en tu forma de diseñar experiencias de aprendizaje después de este curso? Escríbelo con en el siguiente espacio — no hay respuesta correcta o incorrecta, solo tu perspectiva y reflexión.</p>
                     <textarea style="width: 100%; flex-grow: 1; min-height: 160px; padding: 24px; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 16px; color: #1a1a1a; background-color: #fafafa; border: 1px solid #e5e5e5; border-radius: 16px; resize: vertical; box-sizing: border-box; line-height: 1.7; outline: none; transition: border-color 0.2s;" placeholder="Escribe tu reflexión aquí..."></textarea>
-                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;">Este espacio es tu <span style="background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 600; padding: 2px 6px; border-radius: 4px;">cuaderno de trabajo</span>. Lo que escribas aquí no se guarda — anótalo donde puedas conservarlo.</p>
+                    <p style="margin: 16px 0 0 0; font-size: 14px; font-weight: 400; color: #666666; line-height: 1.6;"><span style="background-color: rgba(171,30,18,0.08); color: #AB1E12; font-weight: 600; padding: 2px 6px; border-radius: 4px;">Este es un espacio temporal de trabajo.</span>&nbsp;Recuerda que al salir o actualizar la página perderás lo que escribas aquí. Guarda tus reflexiones en un lugar seguro antes de continuar.</p>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@
             </div>
             <h2 style="margin: 0 0 16px 0; font-size: 32px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Tu plan de implementación</h2>
             <p style="margin: 0 auto 32px auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Escribe tu plan y entrégalo en la actividad de Moodle.</p>
-            <a href="https://cursos.iberoleon.mx/online/mod/assign/view.php?id=1972687&amp;forceview=1" style="display: inline-block; padding: 16px 32px; background-color: #AB1E12; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 50px; transition: background-color 0.2s; box-shadow: 0 8px 24px rgba(171,30,18,0.2);">Ir al entregable</a>
+            <a href="https://cursos.iberoleon.mx/online/mod/forum/view.php?id=1974431&amp;forceview=1" style="display: inline-block; padding: 16px 32px; background-color: #AB1E12; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 50px; transition: background-color 0.2s; box-shadow: 0 8px 24px rgba(171,30,18,0.2);">Ir al entregable</a>
         </div>
     </section>
 
@@ -92,7 +92,7 @@
             </div>
             <h2 style="margin: 0 0 16px 0; font-size: 32px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Cuestionario de autopercepción</h2>
             <p style="margin: 0 auto 32px auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Te pedimos que respondas la misma evaluación breve que completaste al inicio. Tu perspectiva, ahora que terminaste el curso, nos ayuda mucho a seguir mejorándolo.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4korly2aCOjJM7fgjO5c9eITMliSu7K8Anf6becfVOF8AtQ/viewform?usp=header" target="_blank" style="display: inline-block; padding: 16px 32px; background-color: #AB1E12; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 50px; transition: background-color 0.2s; box-shadow: 0 8px 24px rgba(171,30,18,0.2);">Responder cuestionario</a>
+            <a href="https://forms.gle/L3n3GbCr3qWxDHFVA" target="_blank" style="display: inline-block; padding: 16px 32px; background-color: #AB1E12; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 50px; transition: background-color 0.2s; box-shadow: 0 8px 24px rgba(171,30,18,0.2);">Responder cuestionario</a>
         </div>
     </section>
 
@@ -101,7 +101,7 @@
     <section>
         <div style="text-align: center; max-width: 900px; margin: 0 auto;">
             <h2 style="margin: 0 0 24px 0; font-size: 40px; font-weight: 800; color: #1a1a1a; line-height: 1.2; letter-spacing: -0.02em;">Gracias por llegar hasta aquí.</h2>
-            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Gracias por el tiempo y el cuidado que le pusiste a esto. Lo que diseñaste tiene nombre, tiene estructura y tiene un grupo de estudiantes esperándolo.</p>
+            <p style="margin: 0 auto; font-size: 18px; font-weight: 400; color: #4a4a4a; line-height: 1.8; max-width: 680px;">Antes de cerrar, verifica que hayas revisado todos los contenidos, completado las actividades y entregado las evidencias.&nbsp;Gracias por el tiempo y el cuidado que pusiste en este curso. Lo que creaste está listo para tus estudiantes.</p>
         </div>
     </section>
 
